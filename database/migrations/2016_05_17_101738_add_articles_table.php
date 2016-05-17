@@ -3,6 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+
 class AddArticlesTable extends Migration
 {
     /**
@@ -14,10 +15,10 @@ class AddArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->increments('id');
-            $table-->string('title');
+            $table->string('title');
             $table->text('content');
             $table->integer('user_id')->unsigned();
-            $table-->integer('category_id')->unsigned();
+            $table->integer('category_id')->unsigned();
 
             //Para poner las claves ajenas
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
