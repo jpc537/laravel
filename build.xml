@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-      <project name="laravel" default="prod">
+<project name="laravel" default="prod">
 
     <target name="clean">
         <delete dir="./reports"/>
     </target>
-<target name="prepare" depends="clean">
+    <target name="prepare" depends="clean">
 
-    <echo msg="Making directory ./build"/>
-    <mkdir dir="./build"/>
-    <mkdir dir="./reports/logs"/>
-    <mkdir dir="./coverage-report"/>
-</target>
+        <echo msg="Making directory ./build"/>
+        <mkdir dir="./build"/>
+        <mkdir dir="./reports/logs"/>
+        <mkdir dir="./coverage-report"/>
+    </target>
 
     <target name="build" depends = "prepare">
         <echo msg="Copiando archivos al directorio build..."></echo>
@@ -25,41 +25,27 @@
             </fileset>
         </tar>
         <echo msg="Archivos copiados y compromidos en el directorio build  OK!"/>
-        </target>
+    </target>
 
+    <target name="test" depends="prod">
+        <phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
+            <formatter todir="./reports/logs" type="xml"/>
+            <batchtest>
+                <fileset dir="./">
+                    <include name="tests/*Test*.php"/>
+                </fileset>
+            </batchtest>
+            <formatter type="xml" todir="./reports" outfile="logfile.xml"/>
+        </phpunit>
 
+        <phpunitreport infile="./reports/logfile.xml"
+                       styledir="/usr/share/php/data/phing/etc"
+                       format="frames"
+                       todir="./reports"/>
 
-
-    <target name="coverage-report" depends="build">
-        <coverage-setup database="./database">
-            <fileset dir=".">
-                <include name="*.php"/>
-                <exclude name="*Test.php"/>
-            </fileset>
-        </coverage-setup>
-
-
-
-    <phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
-        <formatter todir="./reports/logs" type="xml"/>
-        <batchtest>
-            <fileset dir="./">
-                <include name="tests/*Test*.php"/>
-            </fileset>
-        </batchtest>
-        <formatter type="xml" todir="./reports" outfile="logfile.xml"/>
-    </phpunit>
-        <coverage-report outfile="coverage-report/coverage.xml">
+        <coverage-report outfile="./coverage-report/coverage.xml">
             <report styledir="/usr/lib/php/data/phing/etc"
-                    todir="coverage-report"/>
+                    todir="./coverage-report"/>
         </coverage-report>
-
-
-
-         <phpunitreport infile="./reports/logfile.xml"
-                        styledir="/usr/share/php/data/phing/etc"
-                        format="frames"
-                        todir="./reports"/>
-
-     </target>
+    </target>
 </project>
