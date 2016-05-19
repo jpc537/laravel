@@ -3,6 +3,7 @@
 
     <target name="clean">
         <delete dir="./reports"/>
+        <delete dir="./build"/>
     </target>
     <target name="prepare" depends="clean">
 
