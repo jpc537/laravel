@@ -27,7 +27,7 @@
         <echo msg="Archivos copiados y compromidos en el directorio build  OK!"/>
         </target>
 
-     <target name="test" depends="prod">
+
 
 
     <target name="coverage-report" depends="prepare">
