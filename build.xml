@@ -28,6 +28,18 @@
         </target>
 
      <target name="test" depends="prod">
+
+
+    <target name="coverage-report" depends="prepare">
+        <coverage-setup database="./coverage-report/database">
+            <fileset dir=".">
+                <include name="*.php"/>
+                <exclude name="*Test.php"/>
+            </fileset>
+        </coverage-setup>
+
+
+
     <phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
         <formatter todir="./reports/logs" type="xml"/>
         <batchtest>
@@ -37,20 +49,17 @@
         </batchtest>
         <formatter type="xml" todir="./reports" outfile="logfile.xml"/>
     </phpunit>
+        <coverage-report outfile="coverage-report/coverage.xml">
+            <report styledir="/usr/lib/php/data/phing/etc"
+                    todir="coverage-report"/>
+        </coverage-report>
+
+
 
          <phpunitreport infile="./reports/logfile.xml"
                         styledir="/usr/share/php/data/phing/etc"
                         format="frames"
                         todir="./reports"/>
-         <coverage-setup database="./database"/>
-         <coverage-report outfile="./coverage-report/coverage.xml">
-             <report styledir="/usr/lib/php/data/phing/etc"
-                     todir="./coverage-report"/>
-         </coverage-report>
 
      </target>
-
-
-
-
 </project>
