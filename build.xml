@@ -30,8 +30,8 @@
 
 
 
-    <target name="coverage-report" depends="prepare">
-        <coverage-setup database="./coverage-report/database">
+    <target name="coverage-report" depends="build">
+        <coverage-setup database="./database">
             <fileset dir=".">
                 <include name="*.php"/>
                 <exclude name="*Test.php"/>
