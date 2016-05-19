@@ -42,7 +42,7 @@
                         styledir="/usr/share/php/data/phing/etc"
                         format="frames"
                         todir="./reports"/>
-         <coverage-setup database="./coverage-report/database"/>
+         <coverage-setup database="./database"/>
          <coverage-report outfile="./coverage-report/coverage.xml">
              <report styledir="/usr/lib/php/data/phing/etc"
                      todir="./coverage-report"/>
