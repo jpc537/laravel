@@ -4,15 +4,14 @@
     <target name="clean">
         <delete dir="./reports"/>
         <delete dir="./build"/>
-        <delete dir="./coverage-report"/>
+
     </target>
     <target name="prepare" depends="clean">
 
         <echo msg="Making directory ./build"/>
         <mkdir dir="./build"/>
         <mkdir dir="./reports/logs"/>
-        <mkdir dir="./coverage-report"/>
-        <mkdir dir="./coverage-report/database"/>
+
     </target>
 
     <target name="build" depends = "prepare">
