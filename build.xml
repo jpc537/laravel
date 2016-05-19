@@ -10,6 +10,7 @@
         <mkdir dir="./build"/>
         <mkdir dir="./reports/logs"/>
         <mkdir dir="./coverage-report"/>
+        <mkdir dir="./coverage-report/database"/>
     </target>
 
     <target name="build" depends = "prepare">
@@ -28,7 +29,13 @@
     </target>
 
     <target name="test" depends="prod">
-        <phpunit printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
+        coverage-setup database="./coverage-report/database">
+        <fileset dir=".">
+            <include name="*.php"/>
+            <exclude name="*Test.php"/>
+        </fileset>
+
+        <phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
             <formatter todir="./reports/logs" type="xml"/>
             <batchtest>
                 <fileset dir="./">
@@ -37,7 +44,10 @@
             </batchtest>
             <formatter type="xml" todir="./reports" outfile="logfile.xml"/>
         </phpunit>
-
+        <coverage-report outfile="./coverage-report/coverage.xml">
+            <report styledir="/usr/lib/php/data/phing/etc"
+                    todir="./coverage-report"/>
+        </coverage-report>
         <phpunitreport infile="./reports/logfile.xml"
                        styledir="/usr/share/php/data/phing/etc"
                        format="frames"
