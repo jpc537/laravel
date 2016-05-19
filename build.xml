@@ -43,9 +43,6 @@
                        format="frames"
                        todir="./reports"/>
 
-        <coverage-report outfile="./coverage-report/coverage.xml">
-            <report styledir="/usr/lib/php/data/phing/etc"
-                    todir="./coverage-report"/>
-        </coverage-report>
+
     </target>
 </project>
