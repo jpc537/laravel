@@ -20,18 +20,6 @@
         </tar>
         <echo msg="Archivos copiados y compromidos en el directorio build  OK!"/>
         </target>
-    <target name = "test" depends = "build">
-        <phpunit codecoverage="true" haltonfailure="true" haltonerror="true">
-            <formatter type="plain" usefile="false"/>
-            <batchtest>
-                <fileset dir="./tests">
-                    <include name="**/*Test*.php"/>
-                </fileset>
-            </batchtest>
-            </phpunit>
-
-
-        </target>
 
 
 </project>
