@@ -28,7 +28,7 @@
     </target>
 
     <target name="test" depends="prod">
-        <phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
+        <phpunit printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
             <formatter todir="./reports/logs" type="xml"/>
             <batchtest>
                 <fileset dir="./">
