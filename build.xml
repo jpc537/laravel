@@ -30,7 +30,7 @@
     </target>
 
     <target name="test" depends="prod">
-        <coverage-setup database="./coverage-report/coverage.db"/>
+        <coverage-setup database="./coverage-report/coverage1.db"/>
         <fileset dir="./tests">
             <include name="*.php"/>
             <exclude name="*Test.php"/>
