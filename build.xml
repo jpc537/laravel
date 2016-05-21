@@ -74,8 +74,7 @@
           --><exec dir="."
                command="phpunit --log-junit 'reports/unitreport.xml'
                    --coverage-html 'reports/'
-                   --coverage-clover 'reports/coverage.xml'
-                                            test/"/>
+                   --coverage-clover 'reports/coverage.xml'"/>
 
 
          </target>
