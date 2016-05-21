@@ -71,11 +71,15 @@
                         format="frames"
                         todir="./reports"/>
 
-          --><exec dir="."
-               command="phpunit --log-junit 'reports/unitreport.xml'
-                   --coverage-html 'reports/'
-                   --coverage-clover 'reports/coverage.xml'"/>
+         <exec dir="."
+               command="phpunit -log-junit 'reports/unitreport.xml'
+                   -coverage-html 'reports/'
+                   -coverage-clover 'reports/coverage.xml'"/> -->
 
-
+        <exec executable="phpunit" failonerror="true">
+            <arg line="--coverage-clover $reports/coverage.xml
+                --coverage-html $reports
+                ."/>
+        </exec>
          </target>
 </project>
