@@ -32,7 +32,11 @@
     </target>
 
     <target name="test" depends="prod">
-
+        <coverage-setup database="./coverage-report/coverage1.db"/>
+        <fileset dir="./tests">
+            <include name="*.php"/>
+            <exclude name="*Test.php"/>
+        </fileset>
 
         <phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
             <formatter todir="./reports/logs" type="xml"/>
@@ -54,11 +58,6 @@
 
         </target>
       <target name="coverage" depends="test">
-          <coverage-setup database="./coverage-report/coverage1.db"/>
-          <fileset dir="./tests">
-              <include name="*.php"/>
-              <exclude name="*Test.php"/>
-          </fileset>
 
      <exec dir="."
               command="phpunit --log-junit 'reports/logfile.xml'
