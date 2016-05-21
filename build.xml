@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="laravel" default="prod">
 
-    <target name="clean">
-        <delete dir="./reports"/>
-        <delete dir="./build"/>
-        <delete dir="./coverage-report"/>
 
-    </target>
     <target name="prepare">
 
         <echo msg="Making directory ./build"/>
