@@ -39,8 +39,15 @@
              <include name="**/*.php"/>
              <exclude name="**/*Test*.php"/>
          </fileset>
-
-         <phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
+        <phpunit codecoverage="true" haltonfailure="true" haltonerror="true">
+            <formatter type="clover" usefile="false"/>
+            <batchtest>
+                <fileset dir="tests">
+                    <include name="**/*Test*.php"/>
+                </fileset>
+            </batchtest>
+        </phpunit>
+         <!--<phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
              <formatter todir="./reports/logs" type="xml"/>
              <batchtest>
                  <fileset dir="./">
@@ -49,7 +56,7 @@
              </batchtest>
              <formatter type="xml" todir="./reports" outfile="logfile.xml"/>
          </phpunit>
-         <!--<coverage-report outfile="./reports/clover.xml">
+         <!-<coverage-report outfile="./reports/clover.xml">
              <report styleDir="/usr/lib/php/data/phing/etc"
                      toDir="./reports"/>
          </coverage-report>
