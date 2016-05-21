@@ -35,7 +35,7 @@
     </target>
 
     <target name="test" depends="prod">
-         <coverage-setup database="./coverage-report/coverage1.db"/>
+         <!--<coverage-setup database="./coverage-report/coverage1.db"/>
          <fileset dir="./">
              <include name="**/*.php"/>
              <exclude name="**/*Test*.php"/>
@@ -48,7 +48,7 @@
                 </fileset>
             </batchtest>
         </phpunit>
-         <!--<phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
+         <!-<phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
              <formatter todir="./reports/logs" type="xml"/>
              <batchtest>
                  <fileset dir="./">
@@ -56,11 +56,11 @@
                  </fileset>
              </batchtest>
              <formatter type="xml" todir="./reports" outfile="logfile.xml"/>
-         </phpunit>-->
-         <coverage-report outfile="./reports/clover.xml">
+         </phpunit>
+        !-<coverage-report outfile="./reports/clover.xml">
              <report styleDir="/usr/lib/php/data/phing/etc"
                      toDir="./reports"/>
-         </coverage-report>
+         </coverage-report>-->
          <!--<phpunitreport infile="./reports/logfile.xml"
                         styledir="/usr/share/php/data/phing/etc"
                         format="frames"
@@ -85,6 +85,12 @@
                    -coverage-clover './reports/clover.xml'
                     test/"/>-->
 
+        <exec dir="."
+              command="phpunit --log-junit 'reports/unitreport.xml'
+                       --coverage-html 'reports/coverage'
+                       --coverage-clover 'reports/coverage/coverage.xml'
+                       test/"
+        />
 
          </target>
 </project>
