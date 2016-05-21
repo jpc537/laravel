@@ -81,7 +81,7 @@
          --><exec dir="./"
                command="phpunit -log-junit 'reports/logfile.xml'
                    --coverage-html 'reports/'
-                   --coverage-clover 'reports/clover.xml'
+                   --coverage-clover 'clover.xml'
                     test/"/>
 
 
