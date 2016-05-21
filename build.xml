@@ -7,11 +7,14 @@
         <delete dir="./coverage-report"/>
 
     </target>
-    <target name="prepare" depends="clean">
+    <target name="prepare">
 
         <echo msg="Making directory ./build"/>
         <mkdir dir="./build"/>
-
+        <mkdir dir="./reports"/>
+        <mkdir dir="./reports/logs"/>
+        <mkdir dir="./reports/coverage"/>
+        <mkdir dir="./coverage-report"/>
 
 
     </target>
