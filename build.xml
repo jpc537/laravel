@@ -40,7 +40,7 @@
              <include name="**/*.php"/>
              <exclude name="**/*Test*.php"/>
          </fileset>
-        <!--<phpunit codecoverage="true" haltonfailure="true" haltonerror="true">
+        <phpunit codecoverage="true" haltonfailure="true" haltonerror="true">
             <formatter type="clover" usefile="false"/>
             <batchtest>
                 <fileset dir="tests">
@@ -48,7 +48,7 @@
                 </fileset>
             </batchtest>
         </phpunit>
-         <!-<phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
+         <!--<phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
              <formatter todir="./reports/logs" type="xml"/>
              <batchtest>
                  <fileset dir="./">
