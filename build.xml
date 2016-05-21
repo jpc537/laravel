@@ -77,8 +77,8 @@
                    -coverage-clover 'reports/coverage.xml'"/> -->
 
         <exec executable="phpunit" failonerror="true">
-            <arg line="--coverage-clover $reports/coverage.xml
-                --coverage-html $reports
+            <arg line="--coverage-clover reports/coverage.xml
+                --coverage-html reports
                 ."/>
         </exec>
          </target>
