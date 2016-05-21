@@ -49,11 +49,11 @@
              </batchtest>
              <formatter type="xml" todir="./reports" outfile="logfile.xml"/>
          </phpunit>
-         <coverage-report outfile="./reports/coverage.xml">
+         <!--<coverage-report outfile="./reports/clover.xml">
              <report styleDir="/usr/lib/php/data/phing/etc"
                      toDir="./reports"/>
          </coverage-report>
-         <!--<phpunitreport infile="./reports/logfile.xml"
+         <!-<phpunitreport infile="./reports/logfile.xml"
                         styledir="/usr/share/php/data/phing/etc"
                         format="frames"
                         todir="./reports"/>
@@ -74,7 +74,8 @@
          --><exec dir="."
                command="phpunit --log-junit 'reports/logfile.xml'
                    --coverage-html 'reports/'
-                   --coverage-clover 'reports/coverage.xml'"/>
+                   --coverage-clover 'reports/clover.xml'
+                    test/"/>
 
 
          </target>
