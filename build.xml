@@ -78,14 +78,45 @@
                command="phpunit -log-junit './reports/logfile.xml'
                    -coverage-html './reports/'
                    -coverage-clover './reports/clover.xml'
-                    test/"/>-->
+                    test/"/>
 
         <exec dir="."
-              command="phpunit --log-junit reports/unitreport.xml
-                       --coverage-html reports/coverage
-                       --coverage-clover reports/coverage.xml
+              command="phpunit -log-junit reports/unitreport.xml"
+        <exec dir="."
+              command="phpunit -coverage-html reports/coverage tests/"
+        <exec dir="."
+              command="phpunit -coverage-clover reports/coverage.xml
                        tests/"
-        />
+        />-->
+        <coverage-setup database="./reports/coverage.db">
+            <fileset dir="./">
+                <include name="**/*.php"/>
+                <exclude name="**/*Test.php"/>
+            </fileset>
+        </coverage-setup>
+        <phpunit codecoverage="true" haltonfailure="true" haltonerror="true">
+            <formatter type="clover" usefile="false"/>
+            <batchtest>
+                <fileset dir="src">
+                    <include name="*Test*.php"/>
+                </fileset>
+            </batchtest>
+        </phpunit>
+
+
+
+
+
+
+
+
+
 
          </target>
+
+
+
+
+
+
 </project>
