@@ -56,7 +56,7 @@
         <phpunitreport infile="./reports/logfile.xml"
                        styledir="/usr/share/php/data/phing/etc"
                        format="frames"
-                       todir="./reports"/>-->
+                       todir="./reports"/>
 
         </target>
       <target name="coverage" depends="test">
@@ -71,7 +71,7 @@
                        format="frames"
                        todir="./reports"/>
 
-         <!--<exec dir="."
+         <exec dir="."
               command="phpunit -log-junit 'reports/logfile.xml'
                   -coverage-html 'reports/'
                   -coverage-clover 'reports/coverage.xml'
