@@ -34,48 +34,48 @@
     </target>
 
     <target name="test" depends="prod">
-        <coverage-setup database="./coverage-report/coverage1.db"/>
-        <fileset dir="./tests">
-            <include name="*.php"/>
-            <exclude name="*Test.php"/>
-        </fileset>
+        <!-- <coverage-setup database="./coverage-report/coverage1.db"/>
+         <fileset dir="./tests">
+             <include name="*.php"/>
+             <exclude name="*Test.php"/>
+         </fileset>
 
-        <phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
-            <formatter todir="./reports/logs" type="xml"/>
-            <batchtest>
-                <fileset dir="./">
-                    <include name="tests/*Test*.php"/>
-                </fileset>
-            </batchtest>
-            <formatter type="xml" todir="./reports" outfile="logfile.xml"/>
-        </phpunit>
-        <!--<coverage-report outfile="./coverage-report/coverage.xml">
-            <report styledir="/usr/lib/php/data/phing/etc"
-                    todir="./coverage-report"/>
-        </coverage-report>
-        <phpunitreport infile="./reports/logfile.xml"
-                       styledir="/usr/share/php/data/phing/etc"
-                       format="frames"
-                       todir="./reports"/>
+         <phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
+             <formatter todir="./reports/logs" type="xml"/>
+             <batchtest>
+                 <fileset dir="./">
+                     <include name="tests/*Test*.php"/>
+                 </fileset>
+             </batchtest>
+             <formatter type="xml" todir="./reports" outfile="logfile.xml"/>
+         </phpunit>
+         <coverage-report outfile="./coverage-report/coverage.xml">
+             <report styledir="/usr/lib/php/data/phing/etc"
+                     todir="./coverage-report"/>
+         </coverage-report>
+         <phpunitreport infile="./reports/logfile.xml"
+                        styledir="/usr/share/php/data/phing/etc"
+                        format="frames"
+                        todir="./reports"/>
 
-        </target>
-      <target name="coverage" depends="test">
+         </target>
+       <target name="coverage" depends="test">
 
 
-          <coverage-report outfile="./reports/coverage.xml">
-            <report styledir="/usr/lib/php/data/phing/etc"
-                    todir="./reports"/>
-        </coverage-report>
-        <phpunitreport infile="./reports/logfile.xml"
-                       styledir="/usr/share/php/data/phing/etc"
-                       format="frames"
-                       todir="./reports"/>
+           <coverage-report outfile="./reports/coverage.xml">
+             <report styledir="/usr/lib/php/data/phing/etc"
+                     todir="./reports"/>
+         </coverage-report>
+         <phpunitreport infile="./reports/logfile.xml"
+                        styledir="/usr/share/php/data/phing/etc"
+                        format="frames"
+                        todir="./reports"/>
 
-         <exec dir="."
-              command="phpunit -log-junit 'reports/logfile.xml'
-                  -coverage-html 'reports/'
-                  -coverage-clover 'reports/coverage.xml'
-                                           test/"/>-->
+          --><exec dir="."
+               command="phpunit -log-junit 'reports/logfile.xml'
+                   -coverage-html 'reports/'
+                   -coverage-clover 'reports/coverage.xml'
+                                            test/"/>
 
 
          </target>
