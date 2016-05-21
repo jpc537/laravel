@@ -63,8 +63,8 @@
 
      <exec dir="."
               command="phpunit --log-junit 'reports/logfile.xml'
-                  --coverage-html 'reports/coverage'
-                  --coverage-clover 'reports/coverage/coverage.xml'
+                  --coverage-html 'reports/'
+                  --coverage-clover 'reports/coverage.xml'
                                            test/"/>
 
 
