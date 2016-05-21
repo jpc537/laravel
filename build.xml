@@ -15,7 +15,7 @@
         <mkdir dir="./reports/logs"/>
         <mkdir dir="./reports/coverage"/>
         <mkdir dir="./coverage-report"/>
-        <touch file="./reports/clover.xml"/>
+
 
     </target>
 
@@ -56,12 +56,12 @@
                  </fileset>
              </batchtest>
              <formatter type="xml" todir="./reports" outfile="logfile.xml"/>
-         </phpunit>
-         <!-<coverage-report outfile="./reports/clover.xml">
+         </phpunit>-->
+         <coverage-report outfile="./reports/clover.xml">
              <report styleDir="/usr/lib/php/data/phing/etc"
                      toDir="./reports"/>
          </coverage-report>
-         <!-<phpunitreport infile="./reports/logfile.xml"
+         <!--<phpunitreport infile="./reports/logfile.xml"
                         styledir="/usr/share/php/data/phing/etc"
                         format="frames"
                         todir="./reports"/>
