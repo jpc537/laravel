@@ -11,6 +11,7 @@
         <echo msg="Making directory ./build"/>
         <mkdir dir="./build"/>
         <mkdir dir="./reports/logs"/>
+        <mkdir dir="./reports/coverage"/>
 
     </target>
 
@@ -45,15 +46,21 @@
             </batchtest>
             <formatter type="xml" todir="./reports" outfile="logfile.xml"/>
         </phpunit>
-        <coverage-report outfile="./coverage-report/coverage.xml">
+        <!--<coverage-report outfile="./coverage-report/coverage.xml">
             <report styledir="/usr/lib/php/data/phing/etc"
                     todir="./coverage-report"/>
         </coverage-report>
         <phpunitreport infile="./reports/logfile.xml"
                        styledir="/usr/share/php/data/phing/etc"
                        format="frames"
-                       todir="./reports"/>
+                       todir="./reports"/>-->
+
+        <exec dir="."
+              command="phpunit --log-junit 'reports/unitreport.xml'
+                  --coverage-html 'reports/coverage'
+                  --coverage-clover 'reports/coverage/coverage.xml'
+                                           test/"/>
 
 
-    </target>
+         </target>
 </project>
