@@ -34,13 +34,13 @@
     </target>
 
     <target name="test" depends="prod">
-        <!-- <coverage-setup database="./coverage-report/coverage1.db"/>
-         <fileset dir="./tests">
-             <include name="*.php"/>
-             <exclude name="*Test.php"/>
+         <coverage-setup database="./coverage-report/coverage1.db"/>
+         <fileset dir="./">
+             <include name="**/*.php"/>
+             <exclude name="**/*Test*.php"/>
          </fileset>
 
-         --><phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
+         <phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
              <formatter todir="./reports/logs" type="xml"/>
              <batchtest>
                  <fileset dir="./">
