@@ -43,7 +43,7 @@
                 </fileset>
             </batchtest>
         </phpunit>-->
-         <phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
+         <!--<phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
              <formatter todir="./reports/logs" type="xml"/>
              <batchtest>
                  <fileset dir="./">
@@ -53,9 +53,10 @@
              <formatter type="xml" todir="./reports" outfile="logfile.xml"/>
          </phpunit>
         <coverage-report outfile="./reports/clover.xml">
-             <!--<report  toDir="./reports"></report>-->
+             <report styleDir="clover"
+                     toDir="./reports"/>
          </coverage-report>
-         <!--<phpunitreport infile="./reports/logfile.xml"
+         <!-<phpunitreport infile="./reports/logfile.xml"
                         styledir="/usr/share/php/data/phing/etc"
                         format="frames"
                         todir="./reports"/>
@@ -73,10 +74,10 @@
                         format="frames"
                         todir="./reports"/>-->
 
-         <exec
-               command="phpunit -log-junit './reports/logfile.xml'
-                   -coverage-html './reports/'
-                   -coverage-clover './reports/clover.xml'
+         <exec dir="."
+               command="phpunit --log-junit './reports/logfile.xml'
+                   --coverage-html './reports/'
+                   --coverage-clover './reports/clover.xml'
                     test/"/>
 
         <!--<exec dir="."
