@@ -30,7 +30,7 @@
     </target>
 
     <target name="test" depends="prod">
-         <!--<coverage-setup database="./coverage-report/coverage1.db"/>
+        <coverage-setup database="./coverage-report/coverage1.db"/>
          <fileset dir="./">
              <include name="**/*.php"/>
              <exclude name="**/*Test*.php"/>
@@ -43,7 +43,7 @@
                 </fileset>
             </batchtest>
         </phpunit>
-         <!-<phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
+         <!--<phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
              <formatter todir="./reports/logs" type="xml"/>
              <batchtest>
                  <fileset dir="./">
@@ -88,7 +88,7 @@
               command="phpunit -coverage-clover reports/coverage.xml
                        tests/"
         />-->
-        <coverage-setup database="./reports/coverage.db">
+        <!--<coverage-setup database="./reports/coverage.db">
             <fileset dir="./">
                 <include name="**/*.php"/>
                 <exclude name="**/*Test.php"/>
@@ -101,7 +101,7 @@
                     <include name="*Test*.php"/>
                 </fileset>
             </batchtest>
-        </phpunit>
+        </phpunit>-->
 
 
 
