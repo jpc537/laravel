@@ -33,13 +33,13 @@
         <coverage-setup database="./coverage-report/coverage1.db"/>
          <fileset dir="./">
              <include name="**/*.php"/>
-             <exclude name="**/*Test*.php"/>
+             <exclude name="**/*Test.php"/>
          </fileset>
         <phpunit codecoverage="true" haltonfailure="true" haltonerror="true">
             <formatter type="clover" usefile="false"/>
             <batchtest>
                 <fileset dir="./">
-                    <include name="**/*Test*.php"/>
+                    <include name="tests/*Test*.php"/>
                 </fileset>
             </batchtest>
         </phpunit>
