@@ -35,14 +35,14 @@
              <include name="**/*.php"/>
              <exclude name="**/*Test.php"/>
          </fileset>
-        <phpunit codecoverage="true" haltonfailure="true" haltonerror="true">
+       <!-- <phpunit codecoverage="true" haltonfailure="true" haltonerror="true">
             <formatter type="clover" usefile="false"/>
             <batchtest>
                 <fileset dir="./">
                     <include name="tests/*Test*.php"/>
                 </fileset>
             </batchtest>
-        </phpunit>
+        </phpunit>-->
          <phpunit codecoverage="true" printsummary="true" haltonfailure="true" pharlocation="/usr/local/bin/phpunit">
              <formatter todir="./reports/logs" type="xml"/>
              <batchtest>
