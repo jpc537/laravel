@@ -30,12 +30,12 @@
     </target>
 
     <target name="test" depends="prod">
-        <coverage-setup database="./coverage-report/coverage1.db"/>
+        <!--<coverage-setup database="./coverage-report/coverage1.db"/>
          <fileset dir="./">
              <include name="**/*.php"/>
              <exclude name="**/*Test.php"/>
          </fileset>
-       <!-- <phpunit codecoverage="true" haltonfailure="true" haltonerror="true">
+       <!- <phpunit codecoverage="true" haltonfailure="true" haltonerror="true">
             <formatter type="clover" usefile="false"/>
             <batchtest>
                 <fileset dir="./">
