@@ -74,12 +74,11 @@
                         format="frames"
                         todir="./reports"/>-->
 
-        <exec dir="./"
-              command="phpunit --log-junit 'reports/unitreport.xml'
-                        --coverage-html 'reports/coverage'
-                        --coverage-clover 'reports/coverage/coverage.xml'
-                        tests/"
-        />
+        <exec dir="./tests"  command="phpunit  --testdox-text reports/informe.txt TestRestados.php"/>
+        <exec dir="./tests"  command="phpunit  --testdox-html reports/informe.html TestRestados.php"/>
+        <exec dir="./tests"  command="phpunit  --coverage-html reports/clover.html TestRestados.php"/>
+        <exec dir="./tests"  command="phpunit  --coverage-clover reports/clover.xml TestRestados.php"/>
+
 
         <!--<exec dir="."
               command="phpunit -log-junit reports/unitreport.xml"
