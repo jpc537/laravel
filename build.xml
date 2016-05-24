@@ -74,12 +74,12 @@
                         format="frames"
                         todir="./reports"/>-->
 
-        <target name="test" depends="prod">
 
-            <exec dir="./tests"  command="phpunit  --testdox-text reports/informe.txt *.php"/>
-            <exec dir="./tests"  command="phpunit  --testdox-html reports/informe.html *.php"/>
-            <exec dir="./tests"  command="phpunit  --coverage-html reports/clover.html *.php"/>
-            <exec dir="./tests"  command="phpunit  --coverage-clover reports/clover.xml *.php"/>
+
+            <exec dir="./tests"  command="phpunit  --testdox-text reports/informe.txt TestRestados.php"/>
+            <exec dir="./tests"  command="phpunit  --testdox-html reports/informe.html TestRestados.php"/>
+            <exec dir="./tests"  command="phpunit  --coverage-html reports/clover.html TestRestados.php"/>
+            <exec dir="./tests"  command="phpunit  --coverage-clover reports/clover.xml TestRestados.php"/>
 
         </target>
         <!--<exec dir="."
@@ -114,7 +114,7 @@
 
 
 
-         </target>
+
 
 
 
