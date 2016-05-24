@@ -72,7 +72,7 @@
          <phpunitreport infile="./reports/logfile.xml"
                         styledir="/usr/share/php/data/phing/etc"
                         format="frames"
-                        todir="./reports"/>
+                        todir="./reports"/>-->
 
          <exec
                command="phpunit -log-junit './reports/logfile.xml'
@@ -80,7 +80,7 @@
                    -coverage-clover './reports/clover.xml'
                     test/"/>
 
-        <exec dir="."
+        <!--<exec dir="."
               command="phpunit -log-junit reports/unitreport.xml"
         <exec dir="."
               command="phpunit -coverage-html reports/coverage tests/"
