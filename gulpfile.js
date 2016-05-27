@@ -1,4 +1,4 @@
-var elixir = require('laravel-elixir');
+var elixir = require('laravelhmis2016-elixir');
 
 /*
  |--------------------------------------------------------------------------
