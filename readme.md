@@ -1,7 +1,7 @@
-## Laravel PHP Framework
+## Aplicacion 2015  para la asigunatura Hmis de la universidad de Almeria bajo Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
+[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
 [![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
 [![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
@@ -18,10 +18,12 @@ Documentation for the framework can be found on the [Laravel website](http://lar
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
 ### License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+## Desarrollo
+
+Vamos ha desarrollar una app para usar las diferentes herramientas d desarrollo soft. Hasta ahora estamos usando Azure gitlab Subversion y ha modo personal en el desarrollo el framework Laravel5 
+
+CARLOS CASTAÑO     JOSE MANUEL LOPEZ GALLARDO       GRUPO05

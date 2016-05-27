@@ -11,16 +11,30 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::post('send', ['as' => 'send', 'uses' => 'MailController@send'] );
+Route::get('contact', ['as' => 'contact', 'uses' => 'MailController@index'] );
+
+Route::get('/', 'WelcomeController@index');
+
+Route::get('home', 'HomeController@index');
+
+Route::post('home','HomeController@reservar');
+
+Route::group(['prefix'=>'admin','middleware'=>['auth','is_admin'],'namespace'=>'admin'],function(){
+
+	Route::resource('users','UserController');
+
+	Route::resource('pistas','PistaController');
+
+	Route::resource('reservas','ReservasController');
+
 });
 
-Route::group(['prefix' => 'articles'], function (){
+Route::get('admin', 'AdminController@index');
 
-    Route::get('view/{id}',[
-        'uses' => 'TestController@view',
-        'as' => 'articlesView'
-    ]);
+Route::get('subir', 'SubirController@index');
 
-});
-
+Route::controllers([
+	'auth' => 'Auth\AuthController',
+	'password' => 'Auth\PasswordController',
+]);
