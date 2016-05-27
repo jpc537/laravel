@@ -190,7 +190,7 @@
       <workItem from="1464192815209" duration="19000" />
       <workItem from="1464193273194" duration="226000" />
       <workItem from="1464364350184" duration="2048000" />
-      <workItem from="1464366814616" duration="479000" />
+      <workItem from="1464366814616" duration="487000" />
     </task>
     <task id="LOCAL-00001" summary="Conseguimos conectar la base de datos con el proyecto.">
       <created>1464366245755</created>
@@ -213,11 +213,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464367324624</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Conseguimos conectar la base de datos con el proyecto, despues de muchas modificaciones este es el bueno.">
+      <created>1464367343329</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1464367343329</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6721000" />
+    <option name="totallyTimeSpent" value="6729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
