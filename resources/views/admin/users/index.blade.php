@@ -1,13 +1,13 @@
 <style>
 body {
-    background-image: url("http://www.ecestaticos.com/image/clipping/18d12b9150181377f3ca80f62d329f83/caceres-acoge-a-las-100-mejores-palas-del-mundo-en-el-world-padel-tour.jpg");
+    background-image: url("http://www.asdfgh.es/wp-content/uploads/2015/12/futbol-sala1.jpg");
 
 }
 div.transbox {
     margin: 30px;
     background-color: #ffffff;
     opacity: 0.68;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
+    filter: alpha(opacity=60);
 }
 </style>
 @extends('app')
@@ -27,12 +27,10 @@ div.transbox {
 </div>
 		<div class="container">
 		<div class="col-md-8 col-md-offset">
-
 			<div class="panel panel-default">
 				<div class="panel-heading">Usuarios</div>
- @if(Session::has('message')) 
-
- <div class="alert alert-{{ Session::get('class') }}">{{ Session::get('message')}}</div> @endif 
+ 					@if(Session::has('message'))
+ <div class="alert alert-{{ Session::get('class') }}">{{ Session::get('message')}}</div> @endif
 				<div class="panel-body">
 					
 					{!! Form::model(Request::all(), ['route' => 'admin.users.index', 'method' => 'GET', 'class' => 'navbar-form navbar-left pull-right', 'role' => 'search']) !!}
@@ -42,10 +40,6 @@ div.transbox {
                       </div>
                       <button type="submit" class="btn btn-default">Buscar</button>
                     {!! Form::close() !!}
-
-
-
-
 					<p><a class="btn btn-info" href="{{route('admin.users.create') }}" role="button">Crear Usuario</a></p>
 					Listado de usuarios
 					<table class="table table-striped">
@@ -56,7 +50,6 @@ div.transbox {
 						<th>Rol</th>
 						<th>Activo</th>
 						<th>Acciones</th>
-						
 					</tr>
 					@foreach($users as $user)
 					<tr data-id="{{$user->id}}">
@@ -68,9 +61,7 @@ div.transbox {
 						<td>
 							<a href="{{route('admin.users.edit',$user) }}">Editar</a>
 							<a href="#!" class="btn-delete">Eliminar</a>
-							
-</td>
-
+						</td>
 					</tr>
 					@endforeach
 					</table>

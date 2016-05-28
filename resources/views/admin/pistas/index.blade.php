@@ -8,7 +8,7 @@
     <li><a href="../admin">Inicio</a></li>
     <li ><a href="{{route('admin.users.index') }}">Usuarios</a></li>
     <li class="active"><a href="{{route('admin.pistas.index') }}">Pistas</a></li>
-    <li><a <a href="{{route('admin.reservas.index') }}">Reservas</a></li>
+    <li><a href="{{route('admin.reservas.index') }}">Reservas</a></li>
   </ul>
 </div>
 		<div class="col-md-9 col-md-offset">

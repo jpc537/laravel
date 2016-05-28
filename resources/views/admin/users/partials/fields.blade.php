@@ -1,8 +1,5 @@
-
-
 <div class="form-group">
-	
-							<label class="col-md-4 control-label">nombre</label>
+							<label class="col-md-4 control-label">Nombre</label>
 							<div class="col-md-6">
 								{!!Form::text('name',null,['class'=>'form-control'])!!}
 							</div>

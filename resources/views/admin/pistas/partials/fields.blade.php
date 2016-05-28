@@ -1,8 +1,6 @@
-
-
 <div class="form-group">
 	
-							<label class="col-md-4 control-label">nombre</label>
+							<label class="col-md-4 control-label">Nombre</label>
 							<div class="col-md-6">
 								{!!Form::text('nombre',null,['class'=>'form-control'])!!}
 							</div>
@@ -23,7 +21,7 @@
 						</br>
 						</br>
 						<div class="form-group">
-							<label class="col-md-4 control-label">aforo</label>
+							<label class="col-md-4 control-label">Aforo</label>
 							<div class="col-md-6">
 								{!!Form::select('aforo',[''=>'seleccione ','50'=>'50','100'=>'100'],['class'=>'form-control'])!!}
 

@@ -6,11 +6,10 @@
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
 				<div class="panel-heading">Editar Usuario {{$user->name}}</div>
-
 				<div class="panel-body">
 					@if($errors->any())
 					<div class="alert alert-danger" role="alert">
-					<p>Por favor corrige las entradas:</p>
+					<p>Entradas Incorrectas</p>
 					<ul>
 						@foreach($errors->all()as $error)
 						<li>{{$error}}</li>
@@ -24,9 +23,7 @@
 						</br>
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary">
-									Actualizar usuario
-								</button>
+								<button type="submit" class="btn btn-primary">Actualizar usuario</button>
 							</div>
 						</div>
 						</br>
