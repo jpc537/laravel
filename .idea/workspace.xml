@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05559e20-571d-47dc-8df7-4fbaf8751e37" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin.blade.php" />
     </list>
     <list id="cc692339-ea3f-44a5-8a3a-8fa4d0625581" name="New changelist" comment="" />
     <ignored path="hmis2015.iws" />
@@ -321,7 +321,7 @@
       <workItem from="1464364350184" duration="2048000" />
       <workItem from="1464366814616" duration="896000" />
       <workItem from="1464368302955" duration="1624000" />
-      <workItem from="1464426987089" duration="4093000" />
+      <workItem from="1464426987089" duration="4419000" />
     </task>
     <task id="LOCAL-00001" summary="Conseguimos conectar la base de datos con el proyecto.">
       <created>1464366245755</created>
@@ -421,11 +421,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464430234275</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Modificacion de la vista admin">
+      <created>1464431141521</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1464431141521</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12855000" />
+    <option name="totallyTimeSpent" value="13181000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -474,7 +481,8 @@
     <MESSAGE value="Añado la carpeta vendor por defecto" />
     <MESSAGE value="Ahora vamos a crear las clases para hacer la autentificacion" />
     <MESSAGE value="HE añadido la ventana de errores y empiezo la de admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="HE añadido la ventana de errores y empiezo la de admin" />
+    <MESSAGE value="Modificacion de la vista admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificacion de la vista admin" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
