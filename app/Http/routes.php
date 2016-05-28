@@ -31,7 +31,6 @@ Route::group(['prefix'=>'admin','middleware'=>['auth','is_admin'],'namespace'=>'
 });
 
 Route::get('admin', 'AdminController@index');
-
 Route::get('subir', 'SubirController@index');
 
 Route::controllers([
