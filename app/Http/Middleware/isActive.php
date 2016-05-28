@@ -34,8 +34,6 @@ class IsActive {
 			else
 			{
 				return redirect()->guest('auth/login');
-				
-		    	 
 			}
 		}
 		

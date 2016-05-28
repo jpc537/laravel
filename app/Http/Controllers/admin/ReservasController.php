@@ -97,7 +97,7 @@ class ReservasController extends Controller {
 	 */
 	public function destroy($id,Request $request)
 	{
-		//
+		
 		$reservas = Reserva::find($id);
 
 		  if ($reservas->delete())

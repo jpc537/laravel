@@ -14,18 +14,11 @@ class PistaController extends Controller {
 		$this->middleware('auth');
 		$this->middleware('is_admin');
 	}
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
+
 	public function index()
 	{
-		//
 		$pistas = Pista::all();
-		
 		return view('admin.pistas.index',compact('pistas'));
-	
 	}
 
 	/**
@@ -46,11 +39,8 @@ class PistaController extends Controller {
 	 */
 	public function store(Request $request)
 	{
-		//
+
 		$pistas = Pista::create($request->all());
-       
-       
-       
         return redirect()->route('admin.pistas.index');
 	}
 

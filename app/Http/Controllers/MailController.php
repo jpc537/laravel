@@ -21,7 +21,10 @@ class MailController extends Controller {
 		return \View::make('contact');
 
 	}
-  public function send(Request $request)
+  
+	
+	/**
+	 * public function send(Request $request)
    {
        //guarda el valor de los campos enviados desde el form en un array
        $data = $request->all();
@@ -40,7 +43,7 @@ class MailController extends Controller {
 
        });
        return \View::make('success');
-   }
+   }**/
 
 	/**
 	 * Show the form for creating a new resource.

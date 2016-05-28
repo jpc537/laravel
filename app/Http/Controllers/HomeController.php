@@ -38,14 +38,11 @@ class HomeController extends Controller {
 	 */
 	public function index(Guard $auth)
 	{		
-
 			$user=$this->auth->user(); 
 			$pistas = Pista::all();
 			$pistaSelect =DB::table('pistas')->lists('nombre','nombre');
 			$reservas=DB::select("SELECT * FROM  reservas WHERE id_user=?",[$user->id]);
-			//dd($pistaSelect);
 			return View::make('home')->with('pistas', $pistas)->with('reservas',$reservas)->with('pistaSelect', $pistaSelect);
-		//return view('home',compact('pistas','pistaSelect'));
 	}
 
 	public function reservar(Guard $auth){
@@ -60,9 +57,6 @@ class HomeController extends Controller {
 			$reserva->save();
 			$reservas=DB::select("SELECT * FROM  reservas WHERE id_user=?",[$user->id]);
 			return View::make('home')->with('pistas', $pistas)->with('reservas',$reservas)->with('pistaSelect', $pistaSelect);
-		//dd(Input::all(),$user);
-
-
 	}
 
 	
