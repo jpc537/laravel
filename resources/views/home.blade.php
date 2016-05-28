@@ -15,7 +15,7 @@
 @extends('app')
 @section('content')
     <div class="container-fluid">
-        estas logueado!
+        Bienvenido has iniciado sesión
         <div class="row">
             <div class="col-md-7 ">
                 <div class="transbox">
