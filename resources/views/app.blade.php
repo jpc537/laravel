@@ -46,7 +46,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
 						<li><a href="{{ url('/auth/login') }}">Login</a></li>
-						<li><a href="{{ url('/auth/login') }}">Admin</a></li>
+						<li><a href="{{route('admin.users.index') }}">Admin</a></li>
 						<li><a href="{{ url('/auth/register') }}">Registrarse</a></li>
 					@else
 

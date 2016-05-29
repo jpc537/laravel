@@ -15,7 +15,7 @@
             <div class="transbox">
                 <div class="col-md-3 pull-left">
                     <ul class="nav nav-pills nav-stacked">
-                        <li class="active"><a href="#">Inicio</a></li>
+                        <!--<li class="active"><a href="#">Inicio</a></li>-->
                         <li><a href="{{route('admin.users.index') }}">Usuarios</a></li>
                         <li><a href="{{route('admin.pistas.index') }}">Pistas</a></li>
                         <li><a href="{{route('admin.reservas.index') }}">Reservas</a></li>
@@ -23,12 +23,12 @@
                 </div>
             </div>
 
-            <div class="col-md-8 col-md-offset">
+           <!-- <div class="col-md-8 col-md-offset">
                 <div class="panel panel-default">
                     <div class="panel-heading"><h2><center>Bienvenido Administrador</center></h2></div>
                     <div class="panel-body"></div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 @endsection
