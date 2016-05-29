@@ -29,7 +29,7 @@
 					<span class="icon-bar"></span>
 
 				</button>
-				<a class="navbar-brand" href="#"><b>Viva Reservas</b></a>
+				<a class="navbar-brand" href="../admin"><b>Viva Reservas</b></a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -46,6 +46,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
 						<li><a href="{{ url('/auth/login') }}">Login</a></li>
+						<li><a href="{{ url('/auth/login') }}">Admin</a></li>
 						<li><a href="{{ url('/auth/register') }}">Registrarse</a></li>
 					@else
 

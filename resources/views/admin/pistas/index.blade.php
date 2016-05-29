@@ -13,7 +13,7 @@
 </div>
 		<div class="col-md-9 col-md-offset">
 			<div class="panel panel-default">
-				<div class="panel-heading"><center><b>Pistas Disponibles</b></center></div>
+				<h2><div class="panel-heading"><center><b>Pistas Disponibles</b></center></div></h2>
  @if(Session::has('message')) 
  <div class="alert alert-{{ Session::get('class') }}">{{ Session::get('message')}}</div> @endif 
 				<div class="panel-body">
@@ -21,14 +21,14 @@
 					<tr >
 						<th>Nombre</th>
 						<th>Tipo</th>
-						<th>Modificaciones</th>
+						<th>Opciones</th>
 					</tr>
 					@foreach($pistas as $pista)
 					<tr data-id="{{$pista->id}}">
 						<td>{{$pista->nombre}}</td>
 						<td>{{$pista->tipo}}</td>
 						<td>
-							<a href="#">Editar</a>
+							<a href="#">Editar / </a>
 							<a href="#" class="btn-delete">Eliminar</a>
 						</td>
 					</tr>

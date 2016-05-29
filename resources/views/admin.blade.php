@@ -18,15 +18,15 @@
                         <li class="active"><a href="#">Inicio</a></li>
                         <li><a href="{{route('admin.users.index') }}">Usuarios</a></li>
                         <li><a href="{{route('admin.pistas.index') }}">Pistas</a></li>
-                        <li><a href="#">Reservas</a></li>
+                        <li><a href="{{route('admin.reservas.index') }}">Reservas</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="col-md-8 col-md-offset">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Home</div>
-                    <div class="panel-body">Eres Administrador</div>
+                    <div class="panel-heading"><h2><center>Bienvenido Administrador</center></h2></div>
+                    <div class="panel-body"></div>
                 </div>
             </div>
         </div>

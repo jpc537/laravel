@@ -93,7 +93,7 @@
                                         <td>{{$reserva->id_pista}}</td>
                                         <td>{{$fecha}} </td>
                                         <td>{{$reserva->horaR}}</td>
-                                        <td><a class="glyphicon glyphicon-remove"class="btn-delete" aria-hidden="true" href="#!"></a></td>
+                                        <td><a href="#!" class="btn-delete">Eliminar</a></td>
                                 @endif
                             @endforeach
                         </table>

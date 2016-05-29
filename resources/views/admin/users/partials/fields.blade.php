@@ -1,5 +1,5 @@
 <div class="form-group">
-							<label class="col-md-4 control-label">Nombre</label>
+							<label class="col-md-4 control-label"><b>Nombre</b></label>
 							<div class="col-md-6">
 								{!!Form::text('name',null,['class'=>'form-control'])!!}
 							</div>
@@ -8,7 +8,7 @@
 						
 						</br>
 						<div class="form-group">
-							<label class="col-md-4 control-label">E-Mail </label>
+							<label class="col-md-4 control-label"><b>E-Mail</b></label>
 							<div class="col-md-6">
 								{!!Form::text('email',null,['class'=>'form-control'])!!}
 							</div>
@@ -16,7 +16,7 @@
 						</br>
 						</br>
 						<div class="form-group">
-							<label class="col-md-4 control-label">Password</label>
+							<label class="col-md-4 control-label"><b>Password</b></label>
 							<div class="col-md-6">
 								{!!Form::password('password',['class'=>'form-control'])!!}
 							</div>
@@ -24,7 +24,7 @@
 						</br>
 						</br>
 						<div class="form-group">
-							<label class="col-md-4 control-label">Confirmar Password</label>
+							<label class="col-md-4 control-label"><b>Confirmar Password</b></label>
 							<div class="col-md-6">
 								{!!Form::password('password_confirmation',['class'=>'form-control'])!!}
 								
@@ -33,9 +33,9 @@
 						</br>
 						</br>
 						<div class="form-group">
-							<label class="col-md-4 control-label">Tipo de usuario</label>
+							<label class="col-md-4 control-label"><b>Tipo de usuario</b></label>
 							<div class="col-md-6">
-								{!!Form::select('rol',[''=>'seleccione tipo','usuario'=>'usuario','administrador'=>'administrador'],['class'=>'form-control'])!!}
+								{!!Form::select('rol',[''=>'Selecciona Tipo Usuario','usuario'=>'usuario','administrador'=>'administrador'],['class'=>'form-control'])!!}
 
 								</div>
 							</div>
@@ -43,9 +43,9 @@
 						</br>
 						</br>
 						<div class="form-group">
-							<label class="col-md-4 control-label">Activo</label>
+							<label class="col-md-4 control-label"><b>Activo</b></label>
 							<div class="col-md-6">
-								{!!Form::select('activo',[''=>'seleccione ','si'=>'si','no'=>'no'],['class'=>'form-control'])!!}
+								{!!Form::select('activo',[''=>'Selecciona ','si'=>'si','no'=>'no'],['class'=>'form-control'])!!}
 
 								
 							</div>

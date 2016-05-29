@@ -13,18 +13,15 @@
 </div>
 		<div class="col-md-9 col-md-offset">
 			<div class="panel panel-default">
-				<div class="panel-heading">Reservas</div>
+				<h2><center><div class="panel-heading"><b>Listado de Reservas</b></div></center></h2>
  @if(Session::has('message')) 
  <div class="alert alert-{{ Session::get('class') }}">{{ Session::get('message')}}</div> @endif 
 				<div class="panel-body">
-					<p><a class="btn btn-info" href="#" role="button">Crear reserva</a></p>
-					Historico de reservas
 					<table class="table table-striped">
 					<tr >
-						<th>#</th>
-						<th>pista</th>
-						<th>id usuario</th>
-						<th>fecha y hora</th>
+						<th>Pista</th>
+						<th>Id usuario</th>
+						<th>Fecha y Hora</th>
 						<th>Acciones</th>
 					</tr>
 					@foreach($reservas as $reserva)
@@ -32,7 +29,6 @@
 					$fechaActual = date('d-m-Y '); 
 					?>
 					<tr data-id="{{$reserva->id}}">
-						<td>{{$reserva->id}}</td>
 						<td>{{$reserva->id_pista}}</td>
 						<td>{{$reserva->id_user}}</td>
 						<td>{{$fecha}} --- {{$reserva->horaR}}</td>
@@ -43,6 +39,7 @@
 					</tr>
 					@endforeach
 					</table>
+					<!--<p><a class="btn btn-info" href="#" role="button">Crear reserva</a></p>-->
 				</div>
 			</div>
 		</div>

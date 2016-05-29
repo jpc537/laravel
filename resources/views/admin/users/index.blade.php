@@ -28,43 +28,41 @@ div.transbox {
 		<div class="container">
 		<div class="col-md-8 col-md-offset">
 			<div class="panel panel-default">
-				<div class="panel-heading">Usuarios</div>
+				<h3><div class="panel-heading"><center><b>Usuarios</b></center></div></h3>
  					@if(Session::has('message'))
- <div class="alert alert-{{ Session::get('class') }}">{{ Session::get('message')}}</div> @endif
+					<div class="alert alert-{{ Session::get('class') }}">{{ Session::get('message')}}</div> @endif
 				<div class="panel-body">
-					
+
 					{!! Form::model(Request::all(), ['route' => 'admin.users.index', 'method' => 'GET', 'class' => 'navbar-form navbar-left pull-right', 'role' => 'search']) !!}
                       <div class="form-group">
-                        {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Nombre de usuario']) !!}
-                        
+                        {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Usuario']) !!}
+
                       </div>
                       <button type="submit" class="btn btn-default">Buscar</button>
                     {!! Form::close() !!}
-					<p><a class="btn btn-info" href="{{route('admin.users.create') }}" role="button">Crear Usuario</a></p>
-					Listado de usuarios
+
 					<table class="table table-striped">
 					<tr >
-						<th>#</th>
 						<th>Nombre</th>
 						<th>Email</th>
 						<th>Rol</th>
 						<th>Activo</th>
-						<th>Acciones</th>
+						<th>Opciones</th>
 					</tr>
 					@foreach($users as $user)
 					<tr data-id="{{$user->id}}">
-						<td>{{$user->id}}</td>
 						<td>{{$user->name}}</td>
 						<td>{{$user->email}}</td>
 						<td>{{$user->rol}}</td>
 						<td>{{$user->activo}}</td>
 						<td>
-							<a href="{{route('admin.users.edit',$user) }}">Editar</a>
+							<a href="{{route('admin.users.edit',$user) }}">Editar /</a>
 							<a href="#!" class="btn-delete">Eliminar</a>
 						</td>
 					</tr>
 					@endforeach
 					</table>
+					<center><a class="btn btn-info" href="{{route('admin.users.create') }}" role="button">Crear Usuario</a></center>
 					{!!$users->render()!!}
 				
 				</div>
