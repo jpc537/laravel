@@ -13,26 +13,20 @@
 </div>
 		<div class="col-md-9 col-md-offset">
 			<div class="panel panel-default">
-				<div class="panel-heading">Pistas</div>
+				<div class="panel-heading"><center><b>Pistas Disponibles</b></center></div>
  @if(Session::has('message')) 
  <div class="alert alert-{{ Session::get('class') }}">{{ Session::get('message')}}</div> @endif 
 				<div class="panel-body">
-					<p><a class="btn btn-info" href="{{route('admin.pistas.create') }}" role="button">Crear pista</a></p>
-					Listado de pistas
 					<table class="table table-striped">
 					<tr >
-						<th>#</th>
 						<th>Nombre</th>
-						<th>tipo</th>
-						<th>aforo</th>
-						<th>Acciones</th>
+						<th>Tipo</th>
+						<th>Modificaciones</th>
 					</tr>
 					@foreach($pistas as $pista)
 					<tr data-id="{{$pista->id}}">
-						<td>{{$pista->id}}</td>
 						<td>{{$pista->nombre}}</td>
 						<td>{{$pista->tipo}}</td>
-						<td>{{$pista->aforo}}</td>
 						<td>
 							<a href="#">Editar</a>
 							<a href="#" class="btn-delete">Eliminar</a>
@@ -40,6 +34,7 @@
 					</tr>
 					@endforeach
 					</table>
+					<center><a class="btn btn-info" href="{{route('admin.pistas.create') }}" role="button"> Crear pista</a></center>
 				</div>
 			</div>
 		</div>

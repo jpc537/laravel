@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Crear Nueva Pista</div>
+				<div class="panel-heading"><center><b>Crear Nueva Pista</b></center></div>
 
 				<div class="panel-body">
 					@if($errors->any())
@@ -25,7 +25,7 @@
 						</br>
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary">Guardar pista</button>
+								<button type="submit" class="btn btn-primary"><center>Guardar Pista</center></button>
 							</div>
 						</div>
 					</br>
