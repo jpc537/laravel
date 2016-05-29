@@ -15,43 +15,37 @@
 @extends('app')
 @section('content')
     <div class="container-fluid">
-        Bienvenido has iniciado sesión
+        <font color="white"><center>Bienvenido has iniciado sesión</center></font>
         <div class="row">
             <div class="col-md-7 ">
                 <div class="transbox">
                     <div class="panel panel-default">
-                        <div class="panel-heading"><b><b><p>Pistas Disponibles</p></b></b></div>
+                        <div class="panel-heading"><b><b><p><center>Pistas para Reservar</center></b></b></div>
                         <div class="panel-body">
-                            <a href="#contenido-oculto-1" class="btn btn-primary"rel="modalBox">Reservar</a>
-                            </br>
-                            </br>
-                            <table class="table table-striped">
+                            <table class="table table-striped" >
                                 <tr >
-                                    <th>#</th>
+                                    <th><center>Pistas Disponibles</center></th>
                                     <th>Pista</th>
                                     <th>Tipo</th>
-                                    <th>Aforo</th>
-
                                 </tr>
                                 @foreach($pistas as $pista)
-
                                     <tr data-id="{{$pista->id}}">
-                                        <td><img src="http://vignette3.wikia.nocookie.net/bobesponja/images/e/eb/Icono_paloma_verde.png/revision/latest?cb=20141011194335"width='25' height='25'></td>
+                                        <td><center><img src="http://vignette3.wikia.nocookie.net/bobesponja/images/e/eb/Icono_paloma_verde.png/revision/latest?cb=20141011194335"width='25' height='25'></center></td>
                                         <td>{{$pista->nombre}}</td>
                                         <td>{{$pista->tipo}}</td>
-                                        <td>{{$pista->aforo}}</td>
                                 @endforeach
                             </table>
+                            <center><a href="#contenido-oculto-1" class="btn btn-primary"rel="modalBox">Reservar</a></center>
 
 
-
-                            <div id='contenido-oculto-1' style="display:none">AÑADIR RESERVA
+                            <!-- ESTA ES LA VENTANA EMERGENTE PARA HACER LAS RESERVAS -->
+                            <div id='contenido-oculto-1' style="display:none"><center><b>Nueva Reserva</b></center>
                                 <form method="POST"action="home">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                                     <div class="form-group">
                                         <div class="col-md-6 col-md-offset-4">
 
-                                            {!!Form::label('pista','pista a reservar:')!!}
+                                            {!!Form::label('pista','¿Qué pista deseas?')!!}
                                             {!! Form::select('pista', $pistaSelect,null,array('class'=>'form-control','style'=>'' ))!!}
 
                                             {!! Form::label('fechaReserva', 'Fecha reserva') !!}
@@ -77,20 +71,17 @@
         </div>
     </div>
     @if($reservas==null)
-
     @else
         <div class="col-md-5 pull-right" >
             <div class="transbox">
                 <div class="panel panel-default">
-                    <div class="panel-heading"><b><b><p>Mis Reservas</p></b></b></div>
+                    <div class="panel-heading"><p><b><center>Mis Reservas</center></b></p></div>
                     <div class="panel-body">
-
-
                         <table class="table table-striped">
                             <tr >
-                                <th>PISTA</th>
-                                <th>FECHA</th>
-                                <th>HORA</th>
+                                <th>Pista Reservada</th>
+                                <th>Fecha Reserva</th>
+                                <th>Hora Reserva</th>
                             </tr>
                             @foreach($reservas as $reserva)
                                 <?php	$fecha=date("d-m-Y",strtotime($reserva->fechaR));
