@@ -56,8 +56,8 @@
                                             <button type="submit" class="btn btn-primary">
                                                 Guardar reserva
                                             </button>
-                                        </div>
-                                    </div>
+
+
                                 </form>
                                 </br>
                                 </br>
@@ -101,31 +101,33 @@
                 </div>
             </div>
             @endif
-        </div>
-@endsection
-{!! Form::open(['route' => ['admin.reservas.destroy', ':RESERVA_ID'], 'method' => 'DELETE', 'id' => 'form-delete']) !!}
-{!! Form::close() !!}
 
-@section('scripts')
-    <script>
-        $(document).ready(function () {
-            $('.btn-delete').click(function (e) {
-                e.preventDefault();
-                var row = $(this).parents('tr');
-                var id = row.data('id');
-                var form = $('#form-delete');
-                var url = form.attr('action').replace(':RESERVA_ID', id);
-                var data = form.serialize();
-                row.fadeOut();
-                $.post(url, data, function (result) {
-                    alert(message);
-                }).fail(function () {
-                    alert($result.message);
-                    row.show();
-                });
-            });
-        });
-    </script>
+            @endsection
+            {!! Form::open(['route' => ['admin.reservas.destroy', ':RESERVA_ID'], 'method' => 'DELETE', 'id' => 'form-delete']) !!}
+            {!! Form::close() !!}
+
+            @section('scripts')
+                <script>
+                    $(document).ready(function () {
+                        $('.btn-delete').click(function (e) {
+                            e.preventDefault();
+                            var row = $(this).parents('tr');
+                            var id = row.data('id');
+                            var form = $('#form-delete');
+                            var url = form.attr('action').replace(':RESERVA_ID', id);
+                            var data = form.serialize();
+                            row.fadeOut();
+                            $.post(url, data, function (result) {
+                                alert(message);
+                            }).fail(function () {
+                                alert($result.message);
+                                row.show();
+                            });
+                        });
+                    });
+                </script>
 @endsection
+
+
 
 

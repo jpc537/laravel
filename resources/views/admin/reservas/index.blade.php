@@ -33,7 +33,6 @@
 						<td>{{$reserva->id_user}}</td>
 						<td>{{$fecha}} --- {{$reserva->horaR}}</td>
 						<td>
-							
 							<a href="#!" class="btn-delete">Eliminar</a>
 						</td>
 					</tr>

@@ -28,8 +28,7 @@
 						<td>{{$pista->nombre}}</td>
 						<td>{{$pista->tipo}}</td>
 						<td>
-							<a href="#">Editar / </a>
-							<a href="#" class="btn-delete">Eliminar</a>
+							<a href="#!" class="btn-delete">Eliminar</a>
 						</td>
 					</tr>
 					@endforeach
