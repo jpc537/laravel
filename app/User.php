@@ -53,8 +53,6 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     {
         if (trim($name) != "")
         {
-
-        	//$query=DB::table('users') ->where('name', $name)->get();
            $query->where('name', "LIKE", "%$name%");
         }
     }

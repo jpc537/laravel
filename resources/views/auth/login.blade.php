@@ -19,7 +19,8 @@ div.transbox {
 				<div class="panel-body">
 					@if(Session::has('message')) 
 
-				 <div class="alert alert-{{ Session::get('class') }}">{{ Session::get('message')}}</div> @endif 
+				 <div class="alert alert-{{ Session::get('class') }}">{{ Session::get('message')}}</div>
+					@endif
 				<div class="panel-body">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">

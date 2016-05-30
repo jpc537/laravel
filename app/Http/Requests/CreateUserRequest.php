@@ -27,6 +27,7 @@ class CreateUserRequest extends Request {
 			'email' => 'required|email|max:255|unique:users',
 			'password' => 'required|confirmed|min:6',
 			'rol'=>'required|in:usuario,administrador',
+			
 		];
 	}
 
