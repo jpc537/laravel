@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-3 col-md-offset">
   <ul class="nav nav-pills nav-stacked">
-    <li><a href="../admin">Inicio</a></li>
+   <!-- <li><a href="../admin">Inicio</a></li>-->
     <li ><a href="{{route('admin.users.index') }}">Usuarios</a></li>
     <li ><a href="{{route('admin.pistas.index') }}">Pistas</a></li>
     <li class="active"><a href="{{route('admin.reservas.index') }}">Reservas</a></li>

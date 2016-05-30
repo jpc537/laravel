@@ -4,8 +4,8 @@
     <body backgroud class="vegas-background" src="../futbol.jpg">
     <div class="container">
         <div class="content">
-            <center> <h1>
-                    <div class="title">Bienvenido a Viva Reservas</div></h1>
+            <center>
+                <h1><div class="title"></div></h1>
             </center>
         </div>
     </div>

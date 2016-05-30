@@ -29,7 +29,7 @@
 					<span class="icon-bar"></span>
 
 				</button>
-				<a class="navbar-brand" href="../admin"><b>Viva Reservas</b></a>
+				<a class="navbar-brand" href="{{ url('/') }}"><b>Viva Reservas</b></a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -38,7 +38,7 @@
 					@if (Auth::guest())
 					<li><a href="{{ url('/') }}"></a></li>
 					@else
-					<li><a href="{{ url('/') }}">Inicio</a></li>
+					<!--<li><a class="navbar-brand" href="{{ url('/') }}">HOME</a></li>-->
 					@endif
 
 				</ul>
