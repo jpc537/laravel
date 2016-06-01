@@ -44,7 +44,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     {
         if ( ! empty ($value))
         {
-            $this->attributes['password'] = bcrypt($value);
+            $this->attributes['password'] = $value;
         }
     }
 	
