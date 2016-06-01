@@ -15,10 +15,10 @@
 @extends('app')
 @section('content')
     <div class="container-fluid">
-        <font color="white"><center>Bienvenido has iniciado sesión</center></font>
+       <h3><font color="white"><center> </center></font></h3>
         <div class="row">
             <div class="col-md-7 ">
-                <div class="transbox">
+                <div>
                     <div class="panel panel-default">
                         <div class="panel-heading"><b><b><p><center>Pistas para Reservar</center></b></b></div>
                         <div class="panel-body">
@@ -73,7 +73,7 @@
     @if($reservas==null)
     @else
         <div class="col-md-5 pull-right" >
-            <div class="transbox">
+            <div>
                 <div class="panel panel-default">
                     <div class="panel-heading"><p><b><center>Mis Reservas</center></b></p></div>
                     <div class="panel-body">
@@ -82,6 +82,7 @@
                                 <th>Pista Reservada</th>
                                 <th>Fecha Reserva</th>
                                 <th>Hora Reserva</th>
+                                <th></th>
                             </tr>
                             @foreach($reservas as $reserva)
                                 <?php	$fecha=date("d-m-Y",strtotime($reserva->fechaR));
