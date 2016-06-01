@@ -16,7 +16,6 @@ div.transbox {
 <div class="container-fluid">
 	<div class="row">
 		<b>
-		<div class="transbox">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
 				<center><div class="panel-heading">Registro</div></center>
@@ -67,6 +66,7 @@ div.transbox {
 				</div>
 			</div>
 		</div>
+			</b>
 		</div>
 		</b>
 		</div>

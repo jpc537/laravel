@@ -15,7 +15,7 @@ div.transbox {
 @section('content')
 <div class="container">
 	<div class="row">
-		<div class="transbox">
+		<div>
 		<div class="col-md-3 col-md-offset">
   <ul class="nav nav-pills nav-stacked">
    <!-- <li><a href="../admin">Inicio</a></li>-->

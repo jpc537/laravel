@@ -12,7 +12,7 @@ div.transbox {
 
 <div class="container-fluid">
 	<div class="row">
-		<div class="transbox">
+		<!--<div class="transbox">-->
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
 				<b><div class="panel-heading">Login</div></b>
@@ -24,7 +24,7 @@ div.transbox {
 				<div class="panel-body">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
-							<strong>Sorry!</strong>Errores en tus datos.<br><br>
+							<strong>Sorry!</strong> Comprueba tus datos.<br><br>
 							<ul>
 								@foreach ($errors->all() as $error)
 									<li>{{ $error }}</li>
