@@ -56,8 +56,6 @@
                                             <button type="submit" class="btn btn-primary">
                                                 Guardar reserva
                                             </button>
-
-
                                 </form>
                                 </br>
                                 </br>

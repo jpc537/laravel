@@ -17,13 +17,12 @@ div.transbox {
 	<div class="row">
 		<div>
 		<div class="col-md-3 col-md-offset">
-  <ul class="nav nav-pills nav-stacked">
-   <!-- <li><a href="../admin">Inicio</a></li>-->
-    <li class="active"><a href="{{route('admin.users.index') }}"> Usuarios</a></li>
-    <li><a href="{{route('admin.pistas.index') }}">Pistas</a></li>
-    <li><a href="{{route('admin.reservas.index') }}">Reservas</a></li>
-  </ul>
-</div>
+		  <ul class="nav nav-pills nav-stacked">
+			<li class="active"><a href="{{route('admin.users.index') }}"> Usuarios</a></li>
+			<li><a href="{{route('admin.pistas.index') }}"><font color="white">Pistas</font></a></li>
+			<li><a href="{{route('admin.reservas.index') }}"><font color="white">Reservas</font></a></li>
+		  </ul>
+		</div>
 </div>
 		<div class="container">
 		<div class="col-md-8 col-md-offset">
@@ -32,15 +31,12 @@ div.transbox {
  					@if(Session::has('message'))
 					<div class="alert alert-{{ Session::get('class') }}">{{ Session::get('message')}}</div> @endif
 				<div class="panel-body">
-
 					{!! Form::model(Request::all(), ['route' => 'admin.users.index', 'method' => 'GET', 'class' => 'navbar-form navbar-left pull-right', 'role' => 'search']) !!}
                       <div class="form-group">
                         {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Usuario']) !!}
-
                       </div>
                       <button type="submit" class="btn btn-default">Buscar</button>
                     {!! Form::close() !!}
-
 					<table class="table table-striped">
 					<tr >
 						<th>Nombre</th>
@@ -64,7 +60,6 @@ div.transbox {
 					</table>
 					<center><a class="btn btn-info" href="{{route('admin.users.create') }}" role="button">Crear Usuario</a></center>
 					{!!$users->render()!!}
-				
 				</div>
 			</div>
 		</div>

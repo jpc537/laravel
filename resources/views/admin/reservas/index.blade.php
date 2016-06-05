@@ -4,24 +4,24 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-3 col-md-offset">
-  <ul class="nav nav-pills nav-stacked">
-   <!-- <li><a href="../admin">Inicio</a></li>-->
-    <li ><a href="{{route('admin.users.index') }}">Usuarios</a></li>
-    <li ><a href="{{route('admin.pistas.index') }}">Pistas</a></li>
-    <li class="active"><a href="{{route('admin.reservas.index') }}">Reservas</a></li>
-  </ul>
-</div>
+		  <ul class="nav nav-pills nav-stacked">
+			<li ><a href="{{route('admin.users.index') }}"><font color="white">Usuarios</font></a></li>
+			<li ><a href="{{route('admin.pistas.index') }}"><font color="white">Pistas</font> </a></li>
+			<li class="active"><a href="{{route('admin.reservas.index') }}">Reservas</a></li>
+		  </ul>
+		</div>
 		<div class="col-md-9 col-md-offset">
 			<div class="panel panel-default">
 				<h2><center><div class="panel-heading"><b>Listado de Reservas</b></div></center></h2>
- @if(Session::has('message')) 
- <div class="alert alert-{{ Session::get('class') }}">{{ Session::get('message')}}</div> @endif 
+					 @if(Session::has('message'))
+					 <div class="alert alert-{{ Session::get('class') }}">{{ Session::get('message')}}</div>
+					@endif
 				<div class="panel-body">
 					<table class="table table-striped">
 					<tr >
 						<th>Pista</th>
 						<th>Id usuario</th>
-						<th>Fecha y Hora</th>
+						<th>Fecha / Hora</th>
 						<th>Acciones</th>
 					</tr>
 					@foreach($reservas as $reserva)
@@ -31,14 +31,13 @@
 					<tr data-id="{{$reserva->id}}">
 						<td>{{$reserva->id_pista}}</td>
 						<td>{{$reserva->id_user}}</td>
-						<td>{{$fecha}} --- {{$reserva->horaR}}</td>
+						<td>{{$fecha}} / {{$reserva->horaR}}</td>
 						<td>
 							<a href="#!" class="btn-delete">Eliminar</a>
 						</td>
 					</tr>
 					@endforeach
 					</table>
-					<!--<p><a class="btn btn-info" href="#" role="button">Crear reserva</a></p>-->
 				</div>
 			</div>
 		</div>
