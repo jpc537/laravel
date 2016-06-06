@@ -54,7 +54,7 @@ return [
 	|
 	*/
 
-	'from' => ['address' => 'carloscasen677@gmail.com', 'name' => 'carlos casen'],
+	'from' => ['address' => 'ejemplos1234hmis@gmail.com', 'name' => 'joseesteban'],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return [
 	|
 	*/
 
-	'username' => 'carloscasen677@gmail.com',
+	'username' => 'ejemplos1234hmis@gmail.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
 	|
 	*/
 
-	'password' => '00pikachu',
+	'password' => 'esteban1234',
 
 	/*
 	|--------------------------------------------------------------------------

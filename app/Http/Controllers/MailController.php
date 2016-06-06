@@ -64,11 +64,7 @@ class MailController extends Controller {
 	public function store(Request $request)
 	{
 		//
-
-
-
-
-      
+    
 	}
 
 	/**
