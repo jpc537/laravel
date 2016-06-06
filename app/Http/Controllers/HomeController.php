@@ -59,6 +59,24 @@ class HomeController extends Controller {
 			return View::make('home')->with('pistas', $pistas)->with('reservas',$reservas)->with('pistaSelect', $pistaSelect);
 	}
 
+	public function destroy($id,Request $request)
+	{
+
+		$reservas = Reserva::find($id);
+
+		if ($reservas->delete())
+		{
+			Session::flash('message','Eliminado  correctamente!');
+			Session::flash('class','success');
+		} else {
+			Session::flash('message','Ha ocurrido un error!');
+			Session::flash('class','danger');
+		}
+
+		$reservas=Reserva::paginate();
+		return  redirect()->route('home',compact('reservas'));
+	}
+
 	
 
 }

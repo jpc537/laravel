@@ -26,7 +26,7 @@
 					</tr>
 					@foreach($reservas as $reserva)
 					<?php	$fecha=date("d-m-Y",strtotime($reserva->fechaR));
-					$fechaActual = date('d-m-Y '); 
+							$fechaActual = date('d-m-Y ');
 					?>
 					<tr data-id="{{$reserva->id}}">
 						<td>{{$reserva->id_pista}}</td>

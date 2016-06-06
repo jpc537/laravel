@@ -51,11 +51,13 @@
                                             {!! Form::label('fechaReserva', 'Fecha reserva') !!}
                                             {!! Form::input('date', 'fechaR', null, ['class' => 'form-control', 'placeholder' => 'Date'])!!}
                                             {!!Form::label('hora','Hora Reserva')!!}
-                                            {!! Form::select('horaR', array('09:00-11:00' => '09:00-11:00', '11:00-13:00' => '11:00-13:00', '13:00-15:00' => '13:00-15:00', '15:00-17:00' => '15:00-17:00', '17:00-19:00' => '17:00-19:00', '19:00-21:00' => '19:00-21:00'), null, array('class'=>'form-control','style'=>'' )) !!}
+                                            {!! Form::select('horaR', array('09:00-10:00' => '09:00-10:00', '10:00-11:00' => '10:00-11:00', '11:00-12:00' => '11:00-12:00', '12:00-13:00' => '12:00-13:00', '17:00-18:00' => '17:00-18:00', '18:00-19:00' => '18:00-19:00', '19:00-20:00' => '19:00-20:00', '20:00-21:00' => '20:00-21:00'), null, array('class'=>'form-control','style'=>'' )) !!}
                                             </br>
                                             <button type="submit" class="btn btn-primary">
                                                 Guardar reserva
                                             </button>
+                                    </div>
+                                        </div>
                                 </form>
                                 </br>
                                 </br>
@@ -84,7 +86,7 @@
                             </tr>
                             @foreach($reservas as $reserva)
                                 <?php	$fecha=date("d-m-Y",strtotime($reserva->fechaR));
-                                $fechaActual = date('d-m-Y ');
+                                        $fechaActual = date('d-m-Y ');
                                 ?>
                                 @if($fecha<$fechaActual-0.5)
                                 @else
@@ -104,6 +106,7 @@
             @endsection
             {!! Form::open(['route' => ['admin.reservas.destroy', ':RESERVA_ID'], 'method' => 'DELETE', 'id' => 'form-delete']) !!}
             {!! Form::close() !!}
+
 
             @section('scripts')
                 <script>
@@ -125,6 +128,7 @@
                         });
                     });
                 </script>
+    </div>
 @endsection
 
 

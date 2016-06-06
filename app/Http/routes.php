@@ -20,8 +20,10 @@ Route::get('home', 'HomeController@index');
 
 Route::post('home','HomeController@reservar');
 
-Route::group(['prefix'=>'admin','middleware'=>['auth','is_admin'],'namespace'=>'admin'],function(){
+Route::post('home','HomeController@destroy');
 
+
+Route::group(['prefix'=>'admin','middleware'=>['auth','is_admin'],'namespace'=>'admin'],function(){
 	Route::resource('users','UserController');
 
 	Route::resource('pistas','PistaController');
