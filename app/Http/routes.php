@@ -10,17 +10,21 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
-Route::post('send', ['as' => 'send', 'uses' => 'MailController@send'] );
+Route::resource('mail', 'MailController');
+//Route::post('send', ['as' => 'send', 'uses' => 'MailController@send'] );
 Route::get('contact', ['as' => 'contact', 'uses' => 'MailController@index'] );
 
 Route::get('/', 'WelcomeController@index');
+
+Route::resource('home','HomeController');
 
 Route::get('home', 'HomeController@index');
 
 Route::post('home','HomeController@reservar');
 
-Route::post('home','HomeController@destroy');
+
+
+
 
 
 Route::group(['prefix'=>'admin','middleware'=>['auth','is_admin'],'namespace'=>'admin'],function(){

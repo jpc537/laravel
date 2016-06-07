@@ -61,7 +61,8 @@ class HomeController extends Controller {
 
 	public function destroy($id,Request $request)
 	{
-
+		$pistas = Pista::all();
+		$pistaSelect =DB::table('pistas')->lists('nombre','nombre');
 		$reservas = Reserva::find($id);
 
 		if ($reservas->delete())
@@ -73,8 +74,7 @@ class HomeController extends Controller {
 			Session::flash('class','danger');
 		}
 
-		$reservas=Reserva::paginate();
-		return  redirect()->route('home',compact('reservas'));
+		return View::make('home')->with('pistas', $pistas)->with('reservas',$reservas)->with('pistaSelect', $pistaSelect);
 	}
 
 	

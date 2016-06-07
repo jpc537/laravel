@@ -3,6 +3,9 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Pista;
+use Mail;
+use Session;
+use Redirect;
 
 use Illuminate\Http\Request;
 
@@ -23,27 +26,6 @@ class MailController extends Controller {
 	}
   
 	
-	/**
-	 * public function send(Request $request)
-   {
-       //guarda el valor de los campos enviados desde el form en un array
-       $data = $request->all();
-
-       //se envia el array y la vista lo recibe en llaves individuales {{ $email }} , {{ $subject }}...
-       \Mail::send('emails.message', $data, function($message) use ($request)
-       {
-           //remitente
-           $message->from($request->email, $request->name);
-
-           //asunto
-           $message->subject($request->subject);
-
-           //receptor
-           $message->to(env('CONTACT_MAIL'), env('CONTACT_NAME'));
-
-       });
-       return \View::make('success');
-   }**/
 
 	/**
 	 * Show the form for creating a new resource.
@@ -63,9 +45,14 @@ class MailController extends Controller {
 	 */
 	public function store(Request $request)
 	{
-		//
-    
-	}
+		Mail::send('emails.contact', $request->all(), function ($msj){
+			$msj->subject('Correo de Contacto');
+			$msj->to('ejemplos1234hmis@gmail.com');
+		});
+		Session::flash('message', 'Mensaje enviado correctamente');
+		return Redirect::to('contact');
+		//dd($request->all());
+    }
 
 	/**
 	 * Display the specified resource.

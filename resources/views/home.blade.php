@@ -36,7 +36,7 @@
                                 @endforeach
                             </table>
                             <center><a href="#contenido-oculto-1" class="btn btn-primary"rel="modalBox">Reservar</a></center>
-                            <a href="{{route('/contact') }}" class="btn-delete">Contacto</a>
+
 
 
                             <!-- ESTA ES LA VENTANA EMERGENTE PARA HACER LAS RESERVAS -->
@@ -103,7 +103,7 @@
             @endif
 
             @endsection
-            {!! Form::open(['route' => ['admin.reservas.destroy', ':RESERVA_ID'], 'method' => 'DELETE', 'id' => 'form-delete']) !!}
+            {!! Form::open(['route' => ['home.destroy', ':RESERVA_ID'], 'method' => 'DELETE', 'id' => 'form-delete']) !!}
             {!! Form::close() !!}
 
 
