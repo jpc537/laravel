@@ -45,12 +45,12 @@ class MailController extends Controller {
 	 */
 	public function store(Request $request)
 	{
-		Mail::send('emails.contact', $request->all(), function ($msj){
+		Mail::send('emails.contacto', $request->all(), function ($msj){
 			$msj->subject('Correo de Contacto');
 			$msj->to('ejemplos1234hmis@gmail.com');
 		});
 		Session::flash('message', 'Mensaje enviado correctamente');
-		return Redirect::to('contact');
+		return Redirect::to('/contact');
 		//dd($request->all());
     }
 

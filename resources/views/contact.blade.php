@@ -4,7 +4,7 @@
    <div class="row">
        <div class="col col-md-6 col-md-offset-3"   >
            <div class="panel panel-default">
-             <div class="panel-heading"><center><h3 class="panel-title">Forumulario de contacto</h3></center></div>
+             <div class="panel-heading"><center><h3 class="panel-title">Formulario de contacto</h3></center></div>
              <div class="panel-body">
                {!! Form::open(['route' => 'mail.store', 'method' => 'POST']) !!}
                  <div class="form-group">
