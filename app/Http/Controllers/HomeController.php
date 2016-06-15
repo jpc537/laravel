@@ -59,14 +59,14 @@ class HomeController extends Controller {
 			$reservas=DB::select("SELECT * FROM  reservas WHERE id_user=?",[$user->id]);
 
 			/*SELECT * FROM `reservas` WHERE id_user = 59 AND id_pista = "Pista01" AND fechaR = "2016-06-16" AND horaR = "09:00-10:00"
-			ESTA ES LA CONSULTA PARA COMPROBAR SI HAY ALGUNA IGUAL YA CREADA ANTERIORMENTE*/
+			ESTA ES LA CONSULTA PARA COMPROBAR SI HAY ALGUNA IGUAL YA CREADA ANTERIORMENTE
 
 			$ejemploReserva=DB::select("SELECT * FROM  reservas WHERE id_user=? AND id_pista=? AND fechaR=? AND  horaR=?",
 				[$user->id], id_pista );
 
 			if (isset($ejemploReserva)){
 
-			}
+			}*/
 
 			return View::make('home')->with('pistas', $pistas)->with('reservas',$reservas)->with('pistaSelect', $pistaSelect);
 	}
