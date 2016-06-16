@@ -5,9 +5,9 @@
     <title>Document</title>
 </head>
 <body>
-    <p><strong>Nombre:</strong>{!!$email!!}}</p>
-    <p><strong>Correo:</strong>{!!$asunto!!}}</p>
-    <p><strong>Mensaje:</strong>{!!$mensaje!!}}</p>
+    <p><strong>Nombre:</strong>{!!$email!!}</p>
+    <p><strong>Correo:</strong>{!!$asunto!!}</p>
+    <p><strong>Mensaje:</strong>{!!$mensaje!!}</p>
 
 </body>
 
