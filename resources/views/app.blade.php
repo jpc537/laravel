@@ -48,6 +48,7 @@
 						<li><a href="{{ url('/auth/login') }}">Login</a></li>
 						<li><a href="{{route('admin.users.index') }}">Admin</a></li>
 						<li><a href="{{ url('/auth/register') }}">Registrarse</a></li>
+						<li><a href="{{ url('/contact') }}">Contacto</a></li>
 					@else
 
 						<li class="dropdown" align='right'>

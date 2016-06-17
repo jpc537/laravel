@@ -46,6 +46,7 @@
                                     <div class="form-group">
                                         <div class="col-md-6 col-md-offset-4">
 
+
                                             {!!Form::label('pista','¿Qué pista deseas?')!!}
                                             {!! Form::select('pista', $pistaSelect,null,array('class'=>'form-control','style'=>'' ))!!}
 

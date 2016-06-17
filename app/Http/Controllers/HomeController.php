@@ -45,32 +45,28 @@ class HomeController extends Controller {
 			return View::make('home')->with('pistas', $pistas)->with('reservas',$reservas)->with('pistaSelect', $pistaSelect);
 	}
 
+
 	public function reservar(Guard $auth){
+		$user=$this->auth->user();
+		$pistas = Pista::all();
+		$pistaSelect =DB::table('pistas')->lists('nombre','nombre');
+		$reserva=new Reserva;
+		$reserva->id_user=$user->id;
+		$reserva->id_pista=Input::get('pista');
+		$reserva->fechaR=Input::get('fechaR');
+		$reserva->horaR=Input::get('horaR');
+		$reservas=DB::select("SELECT * FROM  reservas WHERE id_user=?",[$user->id]);
+		$ejemploReserva=DB::select("SELECT id_pista, fechaR, horaR FROM  reservas WHERE id_pista=? AND fechaR=? AND  horaR=?",
+			[Input::get('pista'), Input::get('fechaR'), Input::get('horaR')]);
 
-			$user=$this->auth->user(); 
-			$pistas = Pista::all();
-			$pistaSelect =DB::table('pistas')->lists('nombre','nombre');
-			$reserva=new Reserva;
-			$reserva->id_user=$user->id;
-			$reserva->id_pista=Input::get('pista');
-			$reserva->fechaR=Input::get('fechaR');
-			$reserva->horaR=Input::get('horaR');
+		if ($ejemploReserva !=null){
+			Session::flash('message','Ha ocurrido un error!');
+		}else {
 			$reserva->save();
-			$reservas=DB::select("SELECT * FROM  reservas WHERE id_user=?",[$user->id]);
-
-			/*SELECT * FROM `reservas` WHERE id_user = 59 AND id_pista = "Pista01" AND fechaR = "2016-06-16" AND horaR = "09:00-10:00"
-			ESTA ES LA CONSULTA PARA COMPROBAR SI HAY ALGUNA IGUAL YA CREADA ANTERIORMENTE
-
-			$ejemploReserva=DB::select("SELECT * FROM  reservas WHERE id_user=? AND id_pista=? AND fechaR=? AND  horaR=?",
-				[$user->id], id_pista );
-
-			if (isset($ejemploReserva)){
-
-			}*/
-
-			return View::make('home')->with('pistas', $pistas)->with('reservas',$reservas)->with('pistaSelect', $pistaSelect);
+			$reservas = DB::select("SELECT * FROM  reservas WHERE id_user=?", [$user->id]);
+		}
+		return View::make('home')->with('pistas', $pistas)->with('reservas',$reservas)->with('pistaSelect', $pistaSelect);
 	}
-
 	public function destroy($id,Request $request)
 	{
 		$pistas = Pista::all();

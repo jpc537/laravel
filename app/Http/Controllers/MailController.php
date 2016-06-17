@@ -74,7 +74,9 @@ class MailController extends Controller {
 
 		});
 		Session::flash('message', 'Mensaje enviado correctamente');
-		return Redirect::to('/contact');
+		
+		return Redirect::to('/auth/login');
+
 		//dd($request->all());
 
     }

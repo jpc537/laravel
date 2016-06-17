@@ -7,6 +7,7 @@
              <div class="panel-heading"><center><h3 class="panel-title">Formulario de contacto</h3></center></div>
              <div class="panel-body">
 
+
                  {!! Form::open(['route' => 'mail.store', 'method' => 'POST', 'role' => 'form']) !!}
                  <div class="form-group">
                      {!! Form::label('email', 'E-Mail') !!}
@@ -22,9 +23,10 @@
                  </div>
                  <div class="form-group">
 
-                     {!! Form::submit('Enviar', ['class' => 'btn btn-success ' ] ) !!}
+                     <center>{!! Form::submit('Enviar', ['class' => 'btn btn-success '] ) !!}</center>
                  </div>
                  {!! Form::close() !!}
+
              </div>
            </div>
         </div>
