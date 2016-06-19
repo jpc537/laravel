@@ -24,7 +24,7 @@ div.transbox {
 				<div class="panel-body">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
-							<strong>Sorry!</strong> Comprueba tus datos.<br><br>
+							<strong>Error</strong> Comprueba tus datos:<br><br>
 							<ul>
 								@foreach ($errors->all() as $error)
 									<li>{{ $error }}</li>
@@ -61,8 +61,8 @@ div.transbox {
 
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary">Login</button>
-								<a class="btn btn-link" href="{{ url('/password/email') }}">¿Olvido su contraseña?</a>
+								<center><button type="submit" class="btn btn-primary">Login</button></center>
+								<!--<a class="btn btn-link" href="{{ url('/password/email') }}">¿Olvido su contraseña?</a>-->
 							</div>
 						</div>
 					</form>

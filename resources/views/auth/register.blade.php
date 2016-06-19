@@ -22,7 +22,7 @@ div.transbox {
 				<div class="panel-body">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
-							<strong>Sorry!</strong>Errores en un tus datos.<br><br>
+							<strong>Error </strong>Comprueba tus datos.<br><br>
 							<ul>
 								@foreach ($errors->all() as $error)
 									<li>{{ $error }}</li>
