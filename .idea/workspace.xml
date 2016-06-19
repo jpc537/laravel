@@ -373,14 +373,7 @@
       <workItem from="1466012375294" duration="212000" />
       <workItem from="1466063012017" duration="16200000" />
       <workItem from="1466321206434" duration="9791000" />
-      <workItem from="1466337229693" duration="89000" />
-    </task>
-    <task id="LOCAL-00008" summary="Conseguimos conectar la base de datos con el proyecto, despues de muchas modificaciones este es el bueno.">
-      <created>1464368447657</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1464368447657</updated>
+      <workItem from="1466337229693" duration="99000" />
     </task>
     <task id="LOCAL-00009" summary="Instalando phing en mi equipo">
       <created>1464369322574</created>
@@ -718,11 +711,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466337317256</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Modifico web config">
+      <created>1466337337033</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1466337337034</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133873000" />
+    <option name="totallyTimeSpent" value="133883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
