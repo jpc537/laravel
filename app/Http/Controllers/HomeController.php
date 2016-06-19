@@ -60,7 +60,12 @@ class HomeController extends Controller {
 			[Input::get('pista'), Input::get('fechaR'), Input::get('horaR')]);
 
 		if ($ejemploReserva != null){
-			return Redirect::to('/auth/login');
+			print '<script language="JavaScript">';
+			print 'alert("Reserva Ocupada");';
+			print '</script>';
+			//Session::flash('Reserva Ocupada');
+			//return View::make('home')->with('pistas', $pistas)->with('reservas',$reservas)->with('pistaSelect', $pistaSelect);
+			//return Redirect::to('/auth/login');
 		}else {
 			$reserva->save();
 			$reservas = DB::select("SELECT * FROM  reservas WHERE id_user=?", [$user->id]);

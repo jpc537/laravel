@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="05559e20-571d-47dc-8df7-4fbaf8751e37" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web.config" afterPath="$PROJECT_DIR$/web.config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
     </list>
     <list id="cc692339-ea3f-44a5-8a3a-8fa4d0625581" name="New changelist" comment="New changelist" />
     <ignored path="hmis2015.iws" />
@@ -47,23 +47,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
+            <state relative-caret-position="247">
+              <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="64" selection-end-column="30" />
               <folding>
                 <element signature="e#38#52#0#PHP" expanded="true" />
-                <marker date="1466329551297" expanded="true" signature="1081:1120" ph="SELECT * FRO... reservas" />
-                <marker date="1466329551297" expanded="true" signature="1618:1657" ph="SELECT * FRO... reservas" />
-                <marker date="1466329551297" expanded="true" signature="1703:1791" ph="SELECT id_pi... reservas" />
-                <marker date="1466329551297" expanded="true" signature="1994:2033" ph="SELECT * FRO... reservas" />
+                <marker date="1466350547127" expanded="true" signature="1081:1120" ph="SELECT * FRO... reservas" />
+                <marker date="1466350547127" expanded="true" signature="1618:1657" ph="SELECT * FRO... reservas" />
+                <marker date="1466350547127" expanded="true" signature="1703:1791" ph="SELECT id_pi... reservas" />
+                <marker date="1466350547127" expanded="true" signature="2259:2298" ph="SELECT * FRO... reservas" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.config" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MailController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MailController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-17">
+              <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.config" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web.config">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -88,7 +98,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1431016833167" expanded="true" signature="0:355" ph="&lt;IfModule mod_rewrite.c&gt;" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,8 +171,8 @@
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/password.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/web.config" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
       </list>
     </option>
   </component>
@@ -374,14 +386,7 @@
       <workItem from="1466012375294" duration="212000" />
       <workItem from="1466063012017" duration="16200000" />
       <workItem from="1466321206434" duration="9791000" />
-      <workItem from="1466337229693" duration="1153000" />
-    </task>
-    <task id="LOCAL-00012" summary="Añado la carpeta vendor por defecto">
-      <created>1464428341403</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1464428341403</updated>
+      <workItem from="1466337229693" duration="2642000" />
     </task>
     <task id="LOCAL-00013" summary="Ahora vamos a crear las clases para hacer la autentificacion">
       <created>1464428981709</created>
@@ -719,11 +724,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466348554409</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Modifico web config">
+      <created>1466349480316</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1466349480316</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134937000" />
+    <option name="totallyTimeSpent" value="136426000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -1042,13 +1054,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MailController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/contact.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1102,7 +1107,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1431016833167" expanded="true" signature="0:355" ph="&lt;IfModule mod_rewrite.c&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1114,25 +1121,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
-          <folding>
-            <element signature="e#38#52#0#PHP" expanded="true" />
-            <marker date="1466329551297" expanded="true" signature="1081:1120" ph="SELECT * FRO... reservas" />
-            <marker date="1466329551297" expanded="true" signature="1618:1657" ph="SELECT * FRO... reservas" />
-            <marker date="1466329551297" expanded="true" signature="1703:1791" ph="SELECT id_pi... reservas" />
-            <marker date="1466329551297" expanded="true" signature="1994:2033" ph="SELECT * FRO... reservas" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web.config">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MailController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="64" selection-end-column="30" />
+          <folding>
+            <element signature="e#38#52#0#PHP" expanded="true" />
+            <marker date="1466350547127" expanded="true" signature="1081:1120" ph="SELECT * FRO... reservas" />
+            <marker date="1466350547127" expanded="true" signature="1618:1657" ph="SELECT * FRO... reservas" />
+            <marker date="1466350547127" expanded="true" signature="1703:1791" ph="SELECT id_pi... reservas" />
+            <marker date="1466350547127" expanded="true" signature="2259:2298" ph="SELECT * FRO... reservas" />
+          </folding>
         </state>
       </provider>
     </entry>
