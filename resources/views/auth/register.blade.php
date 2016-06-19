@@ -16,14 +16,13 @@ div.transbox {
 <div class="container-fluid">
 	<div class="row">
 		<b>
-		<div class="transbox">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Registro</div>
+				<center><div class="panel-heading">Registro</div></center>
 				<div class="panel-body">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
-							<strong>Sorry!</strong>Errores en un tus datos.<br><br>
+							<strong>Error </strong>Comprueba tus datos.<br><br>
 							<ul>
 								@foreach ($errors->all() as $error)
 									<li>{{ $error }}</li>
@@ -59,16 +58,15 @@ div.transbox {
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary">
-									Registrarse
-								</button>
+							<div class="col-md-4 col-md-offset-4">
+								<center><button type="submit" class="btn btn-primary">Registrarse</button></center>
 							</div>
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
+			</b>
 		</div>
 		</b>
 		</div>

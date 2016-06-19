@@ -25,7 +25,7 @@ class IsAdmin {
 		if($this->auth->user()->rol !='administrador')
 		{
 			$this->auth->logout();
-			Session::flash('message','No eres administrador...vuelve a tu sitio!!!!');
+			Session::flash('message','Lo siento, no eres administrador.');
 			Session::flash('class','danger');
 			if ($request->ajax())
 			{
@@ -36,7 +36,6 @@ class IsAdmin {
 				return redirect()->guest('auth/login');
 			}
 		}
-		
 		return $next($request);
 	}
 

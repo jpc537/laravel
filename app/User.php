@@ -44,7 +44,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     {
         if ( ! empty ($value))
         {
-            $this->attributes['password'] = bcrypt($value);
+            $this->attributes['password'] = $value;
         }
     }
 	
@@ -53,8 +53,6 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     {
         if (trim($name) != "")
         {
-
-        	//$query=DB::table('users') ->where('name', $name)->get();
            $query->where('name', "LIKE", "%$name%");
         }
     }

@@ -38,31 +38,51 @@ class HomeController extends Controller {
 	 */
 	public function index(Guard $auth)
 	{		
-
 			$user=$this->auth->user(); 
 			$pistas = Pista::all();
 			$pistaSelect =DB::table('pistas')->lists('nombre','nombre');
 			$reservas=DB::select("SELECT * FROM  reservas WHERE id_user=?",[$user->id]);
-			//dd($pistaSelect);
 			return View::make('home')->with('pistas', $pistas)->with('reservas',$reservas)->with('pistaSelect', $pistaSelect);
-		//return view('home',compact('pistas','pistaSelect'));
 	}
 
+
 	public function reservar(Guard $auth){
-			$user=$this->auth->user(); 
-			$pistas = Pista::all();
-			$pistaSelect =DB::table('pistas')->lists('nombre','nombre');
-			$reserva=new Reserva;
-			$reserva->id_user=$user->id;
-			$reserva->id_pista=Input::get('pista');
-			$reserva->fechaR=Input::get('fechaR');
-			$reserva->horaR=Input::get('horaR');
+		$user=$this->auth->user();
+		$pistas = Pista::all();
+		$pistaSelect =DB::table('pistas')->lists('nombre','nombre');
+		$reserva=new Reserva;
+		$reserva->id_user=$user->id;
+		$reserva->id_pista=Input::get('pista');
+		$reserva->fechaR=Input::get('fechaR');
+		$reserva->horaR=Input::get('horaR');
+		$reservas=DB::select("SELECT * FROM  reservas WHERE id_user=?",[$user->id]);
+		$ejemploReserva=DB::select("SELECT id_pista, fechaR, horaR FROM  reservas WHERE id_pista=? AND fechaR=? AND  horaR=?",
+			[Input::get('pista'), Input::get('fechaR'), Input::get('horaR')]);
+
+		if ($ejemploReserva != null){
+			return Redirect::to('/auth/login');
+		}else {
 			$reserva->save();
-			$reservas=DB::select("SELECT * FROM  reservas WHERE id_user=?",[$user->id]);
-			return View::make('home')->with('pistas', $pistas)->with('reservas',$reservas)->with('pistaSelect', $pistaSelect);
-		//dd(Input::all(),$user);
+			$reservas = DB::select("SELECT * FROM  reservas WHERE id_user=?", [$user->id]);
+		}
+		return View::make('home')->with('pistas', $pistas)->with('reservas',$reservas)->with('pistaSelect', $pistaSelect);
+	}
+	public function destroy($id,Request $request)
+	{
+		$pistas = Pista::all();
+		$pistaSelect =DB::table('pistas')->lists('nombre','nombre');
+		$reservas = Reserva::find($id);
 
+		if ($reservas->delete())
+		{
+			Session::flash('message','Eliminado  correctamente!');
+			Session::flash('class','success');
+		} else {
+			Session::flash('message','Ha ocurrido un error!');
+			Session::flash('class','danger');
+		}
 
+		return View::make('home')->with('pistas', $pistas)->with('reservas',$reservas)->with('pistaSelect', $pistaSelect);
 	}
 
 	

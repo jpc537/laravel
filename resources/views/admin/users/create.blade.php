@@ -23,7 +23,7 @@
 						</br>
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary">Registrar</button>
+								<button type="submit" class="btn btn-primary"><center>Registrar</center></button>
 							</div>
 						</div>
 					</br>

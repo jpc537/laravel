@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>EnForma Sport center</title>
+	<title>Viva Reservas</title>
 
 	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 
@@ -29,7 +29,7 @@
 					<span class="icon-bar"></span>
 
 				</button>
-				<a class="navbar-brand" href="#"><b>Viva Reservas</b></a>
+				<a class="navbar-brand" href="{{ url('/') }}"><b>Viva Reservas</b></a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -38,7 +38,7 @@
 					@if (Auth::guest())
 					<li><a href="{{ url('/') }}"></a></li>
 					@else
-					<li><a href="{{ url('/') }}">Inicio</a></li>
+					<!--<li><a class="navbar-brand" href="{{ url('/') }}">HOME</a></li>-->
 					@endif
 
 				</ul>
@@ -46,7 +46,9 @@
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
 						<li><a href="{{ url('/auth/login') }}">Login</a></li>
+						<li><a href="{{route('admin.users.index') }}">Admin</a></li>
 						<li><a href="{{ url('/auth/register') }}">Registrarse</a></li>
+						<li><a href="{{ url('/contact') }}">Contacto</a></li>
 					@else
 
 						<li class="dropdown" align='right'>

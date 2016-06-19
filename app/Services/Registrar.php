@@ -2,6 +2,7 @@
 
 use App\User;
 use Validator;
+use Illuminate\Contracts\Validation;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 
 class Registrar implements RegistrarContract {
@@ -14,7 +15,11 @@ class Registrar implements RegistrarContract {
 	 */
 	public function validator(array $data)
 	{
-		
+		return Validator::make($data, [
+			'name' => 'required|max:255',
+			'email' => 'required|email|max:255|unique:users',
+			'password' => 'required|confirmed|min:6',
+		]);
 	}
 
 	/**

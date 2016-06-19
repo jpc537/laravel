@@ -4,7 +4,7 @@
         margin: 30px;
         background-color: #ffffff;
         opacity: 0.68;
-        filter: alpha(opacity=60); /* For IE8 and earlier */
+        filter: alpha(opacity=60);
     }
 </style>
 @extends('app')
@@ -15,18 +15,10 @@
             <div class="transbox">
                 <div class="col-md-3 pull-left">
                     <ul class="nav nav-pills nav-stacked">
-                        <li class="active"><a href="#">Inicio</a></li>
                         <li><a href="{{route('admin.users.index') }}">Usuarios</a></li>
                         <li><a href="{{route('admin.pistas.index') }}">Pistas</a></li>
-                        <li><a href="#">Reservas</a></li>
+                        <li><a href="{{route('admin.reservas.index') }}">Reservas</a></li>
                     </ul>
-                </div>
-            </div>
-
-            <div class="col-md-8 col-md-offset">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Home</div>
-                    <div class="panel-body">Eres Administrador</div>
                 </div>
             </div>
         </div>

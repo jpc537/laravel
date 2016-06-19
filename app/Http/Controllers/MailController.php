@@ -3,6 +3,9 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Pista;
+use Mail;
+use Session;
+use Redirect;
 
 use Illuminate\Http\Request;
 
@@ -21,26 +24,8 @@ class MailController extends Controller {
 		return \View::make('contact');
 
 	}
-  public function send(Request $request)
-   {
-       //guarda el valor de los campos enviados desde el form en un array
-       $data = $request->all();
-
-       //se envia el array y la vista lo recibe en llaves individuales {{ $email }} , {{ $subject }}...
-       \Mail::send('emails.message', $data, function($message) use ($request)
-       {
-           //remitente
-           $message->from($request->email, $request->name);
-
-           //asunto
-           $message->subject($request->subject);
-
-           //receptor
-           $message->to(env('CONTACT_MAIL'), env('CONTACT_NAME'));
-
-       });
-       return \View::make('success');
-   }
+  
+	
 
 	/**
 	 * Show the form for creating a new resource.
@@ -60,12 +45,60 @@ class MailController extends Controller {
 	 */
 	public function store(Request $request)
 	{
-		//
+		/*$fromEmail = 'ejemplos1234hmis@gmail.com';
+		$fromName = 'Esteban';
+		Mail::send('emails.contacto', $request->all(), function ($msj) use ($fromEmail, $fromName){
+			$msj->from($fromEmail, $fromName);
+			$msj->to($fromEmail, $fromName);
+		});
+
+		return \View::make('contact');*/
+		//return Redirect::to('/contact');
+		//dd($request->all());
 
 
+		//guarda el valor de los campos enviados desde el form en un array
+		$data = $request->all();
 
+		//se envia el array y la vista lo recibe en llaves individuales {{ $email }} , {{ $subject }}...
+		\Mail::send('emails.contacto', $data, function($message) use ($request)
+		{
+			//remitente
+			$message->from($request->email);
 
-      
+			//asunto
+			$message->subject($request->asunto);
+
+			//receptor
+			$message->to(env('CONTACT_MAIL'), env('CONTACT_NAME'));
+
+		});
+		Session::flash('message', 'Mensaje enviado correctamente.');
+		return Redirect::to('/auth/login');
+
+		//dd($request->all());
+
+    }
+	public function send(Request $request)
+	{
+		//guarda el valor de los campos enviados desde el form en un array
+		/*$data = $request->all();
+
+		//se envia el array y la vista lo recibe en llaves individuales {{ $email }} , {{ $subject }}...
+		\Mail::send('emails.contacto', $data, function($message) use ($request)
+		{
+			//remitente
+			$message->from($request->email, $request->name);
+
+			//asunto
+			$message->subject($request->subject);
+
+			//receptor
+			$message->to(env('CONTACT_MAIL'), env('CONTACT_NAME'));
+
+		});
+		return \View::make('contact');*/
+		//dd($request->all());
 	}
 
 	/**

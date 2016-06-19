@@ -35,9 +35,7 @@ class UserController extends Controller {
 	{
 		//
 		$users = User::FilterAndPaginate($request->get('name'), $request->get('type'));
-		
 		return view('admin.users.index',compact('users'));
-	
 	}
 
 	/**
@@ -62,9 +60,6 @@ class UserController extends Controller {
 	public function store(CreateUserRequest $request)
 	{
         $user = User::create($request->all());
-       
-       
-       
         return redirect()->route('admin.users.index');
 	}
 

@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Restablecer Password</div>
+				<center><div class="panel-heading"><b>Restablecer Password</b></div></center>
 				<div class="panel-body">
 					@if (session('status'))
 						<div class="alert alert-success">
@@ -14,7 +14,7 @@
 					@endif
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
-							<strong>Sorry!</strong>Errores en tus datos.<br><br>
+							<strong>Error</strong>Comprueba tus datos:<br><br>
 							<ul>
 								@foreach ($errors->all() as $error)
 									<li>{{ $error }}</li>
@@ -32,8 +32,8 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary">Reactivar</button>
+							<div class="col-md-4 col-md-offset-4">
+							<center><button type="submit" class="btn btn-primary">Recordar</button></center>
 							</div>
 						</div>
 					</form>

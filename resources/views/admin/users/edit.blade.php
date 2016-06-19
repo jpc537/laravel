@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Editar Usuario {{$user->name}}</div>
+				<div class="panel-heading"><center><b>Editar Usuario {{$user->name}}</b></center></div>
 				<div class="panel-body">
 					@if($errors->any())
 					<div class="alert alert-danger" role="alert">
