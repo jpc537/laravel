@@ -73,8 +73,7 @@ class MailController extends Controller {
 			$message->to(env('CONTACT_MAIL'), env('CONTACT_NAME'));
 
 		});
-		Session::flash('message', 'Mensaje enviado correctamente');
-		
+		Session::flash('message', 'Mensaje enviado correctamente.');
 		return Redirect::to('/auth/login');
 
 		//dd($request->all());
