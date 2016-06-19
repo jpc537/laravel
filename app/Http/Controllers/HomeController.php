@@ -59,9 +59,8 @@ class HomeController extends Controller {
 		$ejemploReserva=DB::select("SELECT id_pista, fechaR, horaR FROM  reservas WHERE id_pista=? AND fechaR=? AND  horaR=?",
 			[Input::get('pista'), Input::get('fechaR'), Input::get('horaR')]);
 
-		if ($ejemploReserva !=null){
-			dd('Reserva Ocupada');
-			//return Redirect::to('/auth/login');
+		if ($ejemploReserva != null){
+			return Redirect::to('/auth/login');
 		}else {
 			$reserva->save();
 			$reservas = DB::select("SELECT * FROM  reservas WHERE id_user=?", [$user->id]);
