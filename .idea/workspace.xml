@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="05559e20-571d-47dc-8df7-4fbaf8751e37" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web.config" afterPath="$PROJECT_DIR$/web.config" />
     </list>
     <list id="cc692339-ea3f-44a5-8a3a-8fa4d0625581" name="New changelist" comment="New changelist" />
     <ignored path="hmis2015.iws" />
@@ -374,14 +373,7 @@
       <workItem from="1466012375294" duration="212000" />
       <workItem from="1466063012017" duration="16200000" />
       <workItem from="1466321206434" duration="9791000" />
-      <workItem from="1466337229693" duration="57000" />
-    </task>
-    <task id="LOCAL-00007" summary="Conseguimos conectar la base de datos con el proyecto, despues de muchas modificaciones este es el bueno.">
-      <created>1464367722458</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1464367722458</updated>
+      <workItem from="1466337229693" duration="89000" />
     </task>
     <task id="LOCAL-00008" summary="Conseguimos conectar la base de datos con el proyecto, despues de muchas modificaciones este es el bueno.">
       <created>1464368447657</created>
@@ -719,11 +711,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466332564090</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Modifico web config">
+      <created>1466337317255</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1466337317256</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133841000" />
+    <option name="totallyTimeSpent" value="133873000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -764,7 +763,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Creo que ya esta la pagina de crear pistas" />
     <MESSAGE value="he acabo el panel del admin, ahora seguire con las rutas de laravel." />
     <MESSAGE value="Intentado mejorar la intefaz" />
     <MESSAGE value="Seguimos intentando mejorar la interfaz" />
@@ -789,7 +787,8 @@
     <MESSAGE value="Finalmente lo de olvidar contraseña lo vamos a quitar" />
     <MESSAGE value="Introducimos script sql para probar con jenkins" />
     <MESSAGE value="Cambiamos de rama" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambiamos de rama" />
+    <MESSAGE value="Modifico web config" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifico web config" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
