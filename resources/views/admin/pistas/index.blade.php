@@ -20,17 +20,18 @@
 						<tr >
 							<th>Nombre</th>
 							<th>Tipo</th>
-							<th>Opciones</th>
+							<!--<th>Opciones</th>-->
 						</tr>
 						@foreach($pistas as $pista)
 						<tr data-id="{{$pista->id}}">
 							<td>{{$pista->nombre}}</td>
 							<td>{{$pista->tipo}}</td>
-							<td>
+						<!--	<td>
 								<a href="#!" class="btn-delete">Eliminar</a>
-							</td>
+							</td>-->
 						</tr>
 					@endforeach
+
 					</table>
 					<center><a class="btn btn-info" href="{{route('admin.pistas.create') }}" role="button"> Crear pista</a></center>
 				</div>
