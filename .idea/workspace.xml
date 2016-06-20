@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05559e20-571d-47dc-8df7-4fbaf8751e37" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/prueba" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.php" afterPath="$PROJECT_DIR$/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database.php" afterPath="$PROJECT_DIR$/database.php" />
     </list>
     <list id="cc692339-ea3f-44a5-8a3a-8fa4d0625581" name="New changelist" comment="New changelist" />
     <ignored path="hmis2015.iws" />
@@ -54,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="531">
@@ -65,6 +64,16 @@
                 <marker date="1466350547127" expanded="true" signature="1703:1791" ph="SELECT id_pi... reservas" />
                 <marker date="1466350547127" expanded="true" signature="2259:2298" ph="SELECT * FRO... reservas" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prueba" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/prueba">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -462,14 +471,7 @@
       <workItem from="1466419274970" duration="1501000" />
       <workItem from="1466428738694" duration="657000" />
       <workItem from="1466429968520" duration="225000" />
-      <workItem from="1466436467257" duration="662000" />
-    </task>
-    <task id="LOCAL-00017" summary="He creado una nueva rama FEATURE">
-      <created>1464431800592</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1464431800592</updated>
+      <workItem from="1466436467257" duration="893000" />
     </task>
     <task id="LOCAL-00018" summary="Vamos a crear el home y si soy capaz de hacerlo en la rama feature">
       <created>1464432252522</created>
@@ -807,11 +809,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466419416385</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Todo correcto">
+      <created>1466437221689</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1466437221689</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143009000" />
+    <option name="totallyTimeSpent" value="143240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -852,7 +861,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Por fin he conseguido poner a la misma altura la ventana de reservas." />
     <MESSAGE value="Ahora estoy atascado en el metodo validator para registrar a los usuarios." />
     <MESSAGE value="Bueno ya registra pero ahora tengo otro problema los usuarios nuevos no se pueden logear solo con los que tenia antes..." />
     <MESSAGE value="Cambios" />
@@ -877,7 +885,8 @@
     <MESSAGE value="App terminada" />
     <MESSAGE value="git ignore" />
     <MESSAGE value="web.config a la carpeta public" />
-    <option name="LAST_COMMIT_MESSAGE" value="web.config a la carpeta public" />
+    <MESSAGE value="Todo correcto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Todo correcto" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
@@ -887,13 +896,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SubirController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-151">
@@ -1222,6 +1224,14 @@
             <marker date="1466350547127" expanded="true" signature="1703:1791" ph="SELECT id_pi... reservas" />
             <marker date="1466350547127" expanded="true" signature="2259:2298" ph="SELECT * FRO... reservas" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prueba">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
