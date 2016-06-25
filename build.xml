@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="laravelhmis2016" default="prod">
+<project name="laravel" default="prod">
 
 
-	<target name="prepare">
+	<target name="clean">
+
+		<echo msg="Borrando directorios "/>
+		<delete dir="./build"/>
+		<delete dir="./reports"/>
+		<delete dir="./reports/logs"/>
+		<delete dir="./reports/coverage"/>
+		<delete dir="./coverage-report"/>
+	</target>
+
+	<target name="prepare" depends="clean">
 
 		<echo msg="Making directory ./build"/>
 		<mkdir dir="./build"/>
@@ -14,7 +24,7 @@
 
 	<target name="build" depends = "prepare">
 		<echo msg="Copiando archivos al directorio build..."></echo>
-		<copy file="./index.php" tofile="./build/index.php"></copy>
+		<copy file="./public/index.php" tofile="./build/index.php"></copy>
 	</target>
 
 	<target name="prod" depends="build">
