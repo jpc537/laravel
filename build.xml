@@ -37,7 +37,7 @@
 		<echo msg="Archivos copiados y compromidos en el directorio build"/>
 	</target>
 
-	<target name="test" depends="prod">
+	<!--<target name="test" depends="prod">
 		<coverage-setup database="./reports/coverage.db">
 			<fileset dir="./">
 				<include name="**/*.php"/>
@@ -47,11 +47,11 @@
 		<phpunit codecoverage="true" haltonfailure="true" haltonerror="true">
 			<formatter type="clover" usefile="false"/>
 			<batchtest>
-				<fileset dir="src">
+				<fileset dir="tests">
 					<include name="*Test*.php"/>
 				</fileset>
 			</batchtest>
 		</phpunit>
 
-	</target>
+	</target> -->
 </project>
