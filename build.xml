@@ -5,22 +5,22 @@
 <target name="clean">
 
 	<echo msg="Borrando directorios "/>
-	<delete dir="./build"/>
-	<delete dir="./reports"/>
-	<delete dir="./reports/logs"/>
-	<delete dir="./reports/coverage"/>
-	<delete dir="./coverage-report"/>
+	<delete dir="build"/>
+	<delete dir="reports"/>
+	<delete dir="reports/logs"/>
+	<delete dir="reports/coverage"/>
+	<delete dir="coverage-report"/>
 
 </target>
 
 <target name="prepare" depends="clean">
 
 	<echo msg="Making directory ./build"/>
-	<mkdir dir="./build"/>
-	<mkdir dir="./reports"/>
-	<mkdir dir="./reports/logs"/>
-	<mkdir dir="./reports/coverage"/>
-	<mkdir dir="./coverage-report"/>
+	<mkdir dir="build"/>
+	<mkdir dir="reports"/>
+	<mkdir dir="reports/logs"/>
+	<mkdir dir="reports/coverage"/>
+	<mkdir dir="coverage-report"/>
 
 </target>
 
@@ -52,68 +52,6 @@
 	</phpunit>
 	</target>
 
-	<!--<coverage-setup database="./reports/coverage.db">
-		<fileset dir="./">
-			<include name="**/*.php"/>
-			<exclude name="**/*Test.php"/>
-		</fileset>
-	</coverage-setup>
-	<phpunit  codecoverage="true" haltonfailure="true" haltonerror="true">
-		<formatter type="clover" usefile="false"/>
-		<batchtest>
-			<fileset dir="tests">
-				<include name="*Test*.php"/>
-			</fileset>
-		</batchtest>
-	</phpunit>
-</target>
-
-	<!-
-    <target name="test" depends="prod">
-
-        <phpunit codecoverage="false" haltonfailure="true" haltonerror="true">
-
-            <batchtest>
-                <fileset dir="./">
-                    <include name="*Test*.php"/>
-                </fileset>
-            </batchtest>
-
-        </phpunit>
-
-    </target>
-    <-
-    <target name="clover" depends="test">
-
-        <exec executable="phpunit">
-            <arg value="-coverage-clover" />
-            <arg file="./coverage-report/clover.xml" />
-            <arg path="./tests" />
-        </exec>
-
-    </target>
-
-
-    <phpunit coverage-setup database="./reports/coverage.db">
-       <fileset dir="./">
-           <include name="**/*.php"/>
-           <exclude name="**/*Test.php"/>
-       </fileset>
-    </coverage-setup>
-    <phpunit  codecoverage="true" haltonfailure="true" haltonerror="true">
-       <formatter type="clover" usefile="false"/>
-       <batchtest>
-           <fileset dir="tests">
-               <include name="*Test*.php"/>
-           </fileset>
-       </batchtest>
-    </phpunit>
-
-
-    <exec command="./phpunit tests"></exec>
-    <exec command="./phpunit -coverage-clover tests/reports/clover.xml tests"></exec>
-    <exec command="./phpunit -coverage-html tests/reports/clover.html tests"></exec>
-    !-->
 
 
 </project>
