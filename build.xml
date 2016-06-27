@@ -48,7 +48,17 @@
 			</fileset>
 		</batchtest>
 	</phpunit>
-
+	</target>
+<target name="testdos" depends="prod">
+	<phpunit>
+		<formatter todir="reports" type="xml"/>
+		<batchtest>
+			<fileset dir="tests">
+				<include name="**/*Test*.php"/>
+				<exclude name="**/Abstract*.php"/>
+			</fileset>
+		</batchtest>
+	</phpunit>
 
 
 
