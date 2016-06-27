@@ -15,7 +15,7 @@ class User extends PHPUnit_Framework_TestCase
      */
     public function testExample()
     {
-        $this-> assertTrue(true);
+        $this-> assertTrue(false);
     }
 
 
