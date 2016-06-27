@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="laravel" default="prod">
+<project name="laravel" default="clover">
 
 
 <target name="clean">
@@ -39,7 +39,7 @@
 	<echo msg="Archivos copiados y compromidos en el directorio build"/>
 </target>
 
-<target name="test" depends="prod">
+<target name="test" depends="build">
 	<phpunit bootstrap="bootstrap/autoload.php">
 		<formatter type="plain" usefile="false"/>
 		<batchtest>
@@ -48,24 +48,12 @@
 			</fileset>
 		</batchtest>
 	</phpunit>
-	</target>
+    <echo msg="Test Pasados"/>
+</target>
 
 
 <target name="clover" depends="test">
-<!--
-	<phpunit>
-		<formatter todir="coverage-report" type="xml"/>
-		<batchtest>
-			<fileset dir="tests">
-				<include name="**/*Test*.php"/>
-				<exclude name="**/Abstract*.php"/>
-			</fileset>
-		</batchtest>
-	</phpunit>
-	</target>
-
-!-->
-	<exec command="phpunit --coverage-clover coverage-report/clover.xml tests" />
+    <exec command="phpunit --coverage-clover coverage-report/clover.xml tests" />
 
 
 </target>
