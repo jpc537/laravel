@@ -1,6 +1,2 @@
-.env
-.env.*
-/vendor/
-/config/
-/public/
+
 
