@@ -49,20 +49,7 @@
 		</batchtest>
 	</phpunit>
 	</target>
-<target name="testdos" depends="prod">
-	<phpunit>
-		<formatter todir="reports" type="xml"/>
-		<batchtest>
-			<fileset dir="tests">
-				<include name="**/*Test*.php"/>
-				<exclude name="**/Abstract*.php"/>
-			</fileset>
-		</batchtest>
-	</phpunit>
 
-
-
-</target>
 
 <target name="clover" depends="test">
 <!--
@@ -79,6 +66,7 @@
 
 !-->
 	<exec command="phpunit --coverage-clover coverage-report/clover.xml tests" />
+	<exec command="phpunit --coverage-html coverage-report/cloverhtml.html tests" />
 
-	</target>
+</target>
 </project>
