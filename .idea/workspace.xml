@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05559e20-571d-47dc-8df7-4fbaf8751e37" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/build.tar.gz" afterPath="$PROJECT_DIR$/build/build.tar.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coverage-report/testsuites.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
     </list>
     <list id="cc692339-ea3f-44a5-8a3a-8fa4d0625581" name="New changelist" comment="New changelist" />
     <ignored path="hmis2015.iws" />
@@ -37,11 +36,9 @@
       <file leaf-file-name="build.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding>
-                <element signature="n#target#2;n#project#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="-150">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -182,20 +179,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="laravel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hmis2016" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reports" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -367,14 +350,7 @@
       <workItem from="1467051879164" duration="160000" />
       <workItem from="1467054047252" duration="33000" />
       <workItem from="1467061670772" duration="76000" />
-      <workItem from="1467061877385" duration="3683000" />
-    </task>
-    <task id="LOCAL-00029" summary="Modificando la home del usuario, donde podra ver las reservas y hacerlas.">
-      <created>1464517744246</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1464517744246</updated>
+      <workItem from="1467061877385" duration="4056000" />
     </task>
     <task id="LOCAL-00030" summary="Creo que ya esta la pagina de crear pistas">
       <created>1464520631792</created>
@@ -712,7 +688,14 @@
       <option name="project" value="LOCAL" />
       <updated>1467064897816</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="probando con Joaquin">
+      <created>1467065574380</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1467065574380</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -748,7 +731,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165970000" />
+    <option name="totallyTimeSpent" value="166343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1932" height="1038" extended-state="0" />
@@ -1151,11 +1134,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="n#target#2;n#project#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="-150">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
