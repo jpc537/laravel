@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="laravel" default="clover">
+<project name="laravel" default="prod">
 
 
 <target name="clean">
@@ -38,52 +38,58 @@
 	</tar>
 	<echo msg="Archivos copiados y compromidos en el directorio build"/>
 </target>
-<!--
-<target name="test" depends="prod">
+	<target name="test" depends="prod">
 
-	<phpunit codecoverage="false" haltonfailure="true" haltonerror="true">
-
-		<batchtest>
-			<fileset dir="./">
-				<include name="*Test*.php"/>
-			</fileset>
-		</batchtest>
-
-	</phpunit>
-
-</target>
-
-<target name="clover" depends="test">
-
-	<exec executable="phpunit">
-		<arg value="-coverage-clover" />
-		<arg file="./coverage-report/clover.xml" />
-		<arg path="./tests" />
-	</exec>
-
-</target>
+		<exec command="./phpunit tests"></exec>
+	</target>
 
 
-<!-<coverage-setup database="./reports/coverage.db">
-   <fileset dir="./">
-       <include name="**/*.php"/>
-       <exclude name="**/*Test.php"/>
-   </fileset>
-</coverage-setup>
-<phpunit  codecoverage="true" haltonfailure="true" haltonerror="true">
-   <formatter type="clover" usefile="false"/>
-   <batchtest>
-       <fileset dir="tests">
-           <include name="*Test*.php"/>
+	<!--
+    <target name="test" depends="prod">
+
+        <phpunit codecoverage="false" haltonfailure="true" haltonerror="true">
+
+            <batchtest>
+                <fileset dir="./">
+                    <include name="*Test*.php"/>
+                </fileset>
+            </batchtest>
+
+        </phpunit>
+
+    </target>
+    <-
+    <target name="clover" depends="test">
+
+        <exec executable="phpunit">
+            <arg value="-coverage-clover" />
+            <arg file="./coverage-report/clover.xml" />
+            <arg path="./tests" />
+        </exec>
+
+    </target>
+
+
+    <!-<coverage-setup database="./reports/coverage.db">
+       <fileset dir="./">
+           <include name="**/*.php"/>
+           <exclude name="**/*Test.php"/>
        </fileset>
-   </batchtest>
-</phpunit>
+    </coverage-setup>
+    <phpunit  codecoverage="true" haltonfailure="true" haltonerror="true">
+       <formatter type="clover" usefile="false"/>
+       <batchtest>
+           <fileset dir="tests">
+               <include name="*Test*.php"/>
+           </fileset>
+       </batchtest>
+    </phpunit>
 
 
-<exec command="./phpunit tests"></exec>
-<exec command="./phpunit -coverage-clover tests/reports/clover.xml tests"></exec>
-<exec command="./phpunit -coverage-html tests/reports/clover.html tests"></exec>
-!-->
+    <exec command="./phpunit tests"></exec>
+    <exec command="./phpunit -coverage-clover tests/reports/clover.xml tests"></exec>
+    <exec command="./phpunit -coverage-html tests/reports/clover.html tests"></exec>
+    !-->
 
 
 </project>
