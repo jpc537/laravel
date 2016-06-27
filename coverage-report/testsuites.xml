@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="AllTests" tests="3" assertions="3" failures="0" errors="0" time="0.003783">
-    <testsuite name="User2" file="C:\xampp\htdocs\laravel\tests\User2Test.php" tests="1" assertions="1" failures="0" errors="0" time="0.002368">
-      <testcase name="testExample" class="User2" file="C:\xampp\htdocs\laravel\tests\User2Test.php" line="16" assertions="1" time="0.002368"/>
+  <testsuite name="AllTests" tests="3" assertions="3" failures="0" errors="0" time="0.002688">
+    <testsuite name="User2" file="C:\xampp\htdocs\laravel\tests\User2Test.php" tests="1" assertions="1" failures="0" errors="0" time="0.000944">
+      <testcase name="testExample" class="User2" file="C:\xampp\htdocs\laravel\tests\User2Test.php" line="16" assertions="1" time="0.000944"/>
     </testsuite>
-    <testsuite name="User3" file="C:\xampp\htdocs\laravel\tests\User3Test.php" tests="1" assertions="1" failures="0" errors="0" time="0.000743">
-      <testcase name="testExample" class="User3" file="C:\xampp\htdocs\laravel\tests\User3Test.php" line="16" assertions="1" time="0.000743"/>
+    <testsuite name="User3" file="C:\xampp\htdocs\laravel\tests\User3Test.php" tests="1" assertions="1" failures="0" errors="0" time="0.000908">
+      <testcase name="testExample" class="User3" file="C:\xampp\htdocs\laravel\tests\User3Test.php" line="16" assertions="1" time="0.000908"/>
     </testsuite>
-    <testsuite name="User" file="C:\xampp\htdocs\laravel\tests\UserTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.000672">
-      <testcase name="testExample" class="User" file="C:\xampp\htdocs\laravel\tests\UserTest.php" line="16" assertions="1" time="0.000672"/>
+    <testsuite name="User" file="C:\xampp\htdocs\laravel\tests\UserTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.000836">
+      <testcase name="testExample" class="User" file="C:\xampp\htdocs\laravel\tests\UserTest.php" line="16" assertions="1" time="0.000836"/>
     </testsuite>
   </testsuite>
 </testsuites>
