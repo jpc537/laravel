@@ -55,7 +55,7 @@
 </target>
 
 <target name="clover" depends="test">
-
+<!--
 	<phpunit>
 		<formatter todir="coverage-report" type="xml"/>
 		<batchtest>
@@ -67,6 +67,8 @@
 	</phpunit>
 	</target>
 
+!-->
+	<exec command="phpunit --coverage-clover coverage-report/clover.xml tests" />
 
-
+	</target>
 </project>
