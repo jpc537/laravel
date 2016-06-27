@@ -38,7 +38,7 @@
 	</tar>
 	<echo msg="Archivos copiados y compromidos en el directorio build"/>
 </target>
-
+<!--
 <target name="test" depends="prod">
 
 	<phpunit codecoverage="false" haltonfailure="true" haltonerror="true">
@@ -56,7 +56,7 @@
 <target name="clover" depends="test">
 
 	<exec executable="phpunit">
-		<arg value="--coverage-clover" />
+		<arg value="-coverage-clover" />
 		<arg file="./coverage-report/clover.xml" />
 		<arg path="./tests" />
 	</exec>
@@ -64,7 +64,7 @@
 </target>
 
 
-<!--<coverage-setup database="./reports/coverage.db">
+<!-<coverage-setup database="./reports/coverage.db">
    <fileset dir="./">
        <include name="**/*.php"/>
        <exclude name="**/*Test.php"/>
