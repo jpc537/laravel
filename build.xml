@@ -40,14 +40,7 @@
 </target>
 
 <target name="test" depends="build">
-	<phpunit bootstrap="bootstrap/autoload.php">
-		<formatter type="plain" usefile="false"/>
-		<batchtest>
-			<fileset dir="tests">
-				<include name="**/*Test*.php"/>
-			</fileset>
-		</batchtest>
-	</phpunit>
+	<exec command="phpunit tests"/>
     <echo msg="Test Pasados"/>
 </target>
 
