@@ -7,8 +7,6 @@
 	<echo msg="Borrando directorios "/>
 	<delete dir="build"/>
 	<delete dir="reports"/>
-	<delete dir="reports/logs"/>
-	<delete dir="reports/coverage"/>
 	<delete dir="coverage-report"/>
 
 </target>
@@ -18,8 +16,6 @@
 	<echo msg="Making directory ./build"/>
 	<mkdir dir="build"/>
 	<mkdir dir="reports"/>
-	<mkdir dir="reports/logs"/>
-	<mkdir dir="reports/coverage"/>
 	<mkdir dir="coverage-report"/>
 
 </target>
