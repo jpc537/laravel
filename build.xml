@@ -36,7 +36,7 @@
 </target>
 
 <target name="test" depends="build">
-	<exec command="phpunit --bootstrap bootstrap/autoload.php tests"/>
+	<exec command="phpunit --debug tests"/>
     <echo msg="Test Pasados"/>
 </target>
 

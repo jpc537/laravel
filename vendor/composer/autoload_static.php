@@ -2704,7 +2704,6 @@ class ComposerStaticInitc21853c3f092ff92d01ab239439f1410
         'Symfony\\Polyfill\\Util\\BinaryNoFuncOverload' => __DIR__ . '/..' . '/symfony/polyfill-util/BinaryNoFuncOverload.php',
         'Symfony\\Polyfill\\Util\\BinaryOnFuncOverload' => __DIR__ . '/..' . '/symfony/polyfill-util/BinaryOnFuncOverload.php',
         'Symfony\\Polyfill\\Util\\TestListener' => __DIR__ . '/..' . '/symfony/polyfill-util/TestListener.php',
-        'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
         'UserTableSeeder' => __DIR__ . '/../..' . '/database/seeds/UserTableSeeder.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
