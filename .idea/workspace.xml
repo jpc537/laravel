@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05559e20-571d-47dc-8df7-4fbaf8751e37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/OtrosTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/baseTest.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/coverage-report/clover.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/coverage-report/junit.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/User2Test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/User3Test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/UserTest.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PruebasSelenium/SeleniumAdmin/AdminUsuario.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PruebasSelenium/SeleniumAdmin/CrearPista.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PruebasSelenium/SeleniumAdmin/CrearUsuario.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PruebasSelenium/SeleniumAdmin/EliminarReserva.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PruebasSelenium/SeleniumAdmin/EliminarUsuario.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PruebasSelenium/SeleniumAdmin/InicioSesionAdmin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PruebasSelenium/SeleniumAdmin/ModificarUsuario.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PruebasSelenium/SeleniumUsuario/EliminarReserva.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PruebasSelenium/SeleniumUsuario/Login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PruebasSelenium/SeleniumUsuario/Registro.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PruebasSelenium/SeleniumUsuario/Reservar.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
     </list>
     <list id="cc692339-ea3f-44a5-8a3a-8fa4d0625581" name="New changelist" comment="New changelist" />
     <ignored path="hmis2015.iws" />
@@ -64,11 +63,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="baseTest.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="baseTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/baseTest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
               <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CrearPista.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PruebasSelenium/SeleniumAdmin/CrearPista.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -274,20 +283,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hmis2016" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -320,6 +315,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laravel\PruebasSelenium" />
       <recent name="C:\xampp\htdocs\laravel\tests" />
       <recent name="C:\xampp\htdocs\laravelhmis2016\resources\views\vendor" />
       <recent name="C:\xampp\htdocs\laravelhmis2016\resources\views" />
@@ -464,14 +460,7 @@
       <workItem from="1467218911492" duration="3375000" />
       <workItem from="1467222327647" duration="3515000" />
       <workItem from="1467238489114" duration="4098000" />
-      <workItem from="1467304353065" duration="240000" />
-    </task>
-    <task id="LOCAL-00051" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;readme.md&#10;">
-      <created>1466325034813</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1466325034813</updated>
+      <workItem from="1467304353065" duration="487000" />
     </task>
     <task id="LOCAL-00052" summary="ssdbs">
       <created>1466327006264</created>
@@ -809,7 +798,14 @@
       <option name="project" value="LOCAL" />
       <updated>1467074036957</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="metiendo test">
+      <created>1467304618505</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1467304618505</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -845,7 +841,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185880000" />
+    <option name="totallyTimeSpent" value="186127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
@@ -909,7 +905,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="El error de no logearse era por la encriptacion, se la he quitado y ya se logea." />
     <MESSAGE value="Modificaciones en la interfaz home" />
     <MESSAGE value="Modificaciones en la interfaz" />
     <MESSAGE value="Seguimos probando cosas que no van" />
@@ -934,7 +929,8 @@
     <MESSAGE value="añado fichero prueba" />
     <MESSAGE value="probando el build" />
     <MESSAGE value="probando con Joaquin" />
-    <option name="LAST_COMMIT_MESSAGE" value="probando con Joaquin" />
+    <MESSAGE value="metiendo test" />
+    <option name="LAST_COMMIT_MESSAGE" value="metiendo test" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
@@ -951,13 +947,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="71" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Test.php" />
     <entry file="file://$PROJECT_DIR$/tests/ExampleTest.php" />
     <entry file="file://$PROJECT_DIR$/test/TestCase.php" />
@@ -1245,6 +1234,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PruebasSelenium/SeleniumAdmin/CrearPista.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
