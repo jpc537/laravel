@@ -56,12 +56,10 @@
 
 
 <target name="clover" depends="test2">
-    <exec executable="phpunit">
+    <exec command="phpunit --coverage-clover coverage-report/clover.xml tests" />
 
-		<arg value="--coverage-clover" />
-		<arg value="coverage-report/clover.xml" />
-		<arg path="tests" />
-	</exec>
+
+
 
 
 
