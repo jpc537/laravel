@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1467379693">
-  <project timestamp="1467379693">
+<coverage generated="1467415648">
+  <project timestamp="1467415648">
     <file name="C:\xampp/htdocs/laravel/vendor/danielstjules/stringy/src/Create.php">
       <line num="17" type="stmt" count="0"/>
       <metrics loc="19" ncloc="10" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="1" coveredelements="0"/>

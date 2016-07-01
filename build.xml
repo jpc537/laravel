@@ -59,8 +59,8 @@
     <exec executable="phpunit">
 
 		<arg value="--coverage-clover" />
-		<arg value="./coverage-report/clover.xml" />
-		<arg path="./tests" />
+		<arg value="coverage-report/clover.xml" />
+		<arg path="tests" />
 	</exec>
 
 
