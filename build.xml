@@ -56,7 +56,7 @@
 
 
 <target name="clover" depends="test2">
-    <exec command="phpunit --coverage-clover coverage-report/clover.xml tests" />
+    <exec command="phpunit --coverage-clover /coverage-report/clover.xml /tests" />
 
 
 
