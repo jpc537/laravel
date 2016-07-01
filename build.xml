@@ -55,7 +55,7 @@
 	</target>
 
 
-<target name="clover" depends="test">
+<target name="clover" depends="test2">
     <exec executable="phpunit">
 
 		<arg value="--coverage-clover" />
