@@ -36,13 +36,33 @@
 </target>
 
 <target name="test" depends="build">
-	<exec command="phpunit --debug tests"/>
-    <echo msg="Test Pasados"/>
+
+	<exec executable="phpunit" >
+	<arg value="--bootstrap" />
+	<arg value="./bootstrap/autoload.php" />
+	<arg path="./tests" />
+	</exec>
+
 </target>
+
+<target name="test2" depends="test">
+        <exec executable="phpunit" >
+	<arg value="--log-junit" />
+	<arg value="./reports/phpunit.xml" />
+	<arg path="./tests" />
+
+	</exec>
+	</target>
 
 
 <target name="clover" depends="test">
-    <exec command="phpunit --coverage-clover coverage-report/clover.xml tests" />
+    <exec executable="phpunit">
+
+		<arg value="--coverage-clover" />
+		<arg value="./coverage-report/clover.xml" />
+		<arg path="./tests" />
+	</exec>
+
 
 
 </target>
