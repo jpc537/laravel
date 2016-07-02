@@ -1,46 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="./tests" tests="10" assertions="4" failures="0" errors="0" time="0.002584">
-    <testsuite name="OtrosTest" file="C:\xampp\htdocs\laravel\tests\OtrosTest.php" tests="5" assertions="2" failures="0" errors="0" time="0.001651">
-      <testcase name="test1" class="OtrosTest" file="C:\xampp\htdocs\laravel\tests\OtrosTest.php" line="29" assertions="1" time="0.000989">
+  <testsuite name="./tests" tests="11" assertions="5" failures="0" errors="0" time="0.003046">
+    <testsuite name="Test" file="C:\xampp\htdocs\laravel\tests\MoneyTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.001064">
+      <testcase name="testCanBeNegated" class="Test" file="C:\xampp\htdocs\laravel\tests\MoneyTest.php" line="12" assertions="1" time="0.001064"/>
+    </testsuite>
+    <testsuite name="OtrosTest" file="C:\xampp\htdocs\laravel\tests\OtrosTest.php" tests="5" assertions="2" failures="0" errors="0" time="0.001136">
+      <testcase name="test1" class="OtrosTest" file="C:\xampp\htdocs\laravel\tests\OtrosTest.php" line="29" assertions="1" time="0.000494">
         <system-out>OtrosTest::test1
 </system-out>
       </testcase>
-      <testcase name="test2" class="OtrosTest" file="C:\xampp\htdocs\laravel\tests\OtrosTest.php" line="34" assertions="1" time="0.000185">
+      <testcase name="test2" class="OtrosTest" file="C:\xampp\htdocs\laravel\tests\OtrosTest.php" line="34" assertions="1" time="0.000173">
         <system-out>OtrosTest::test2
 </system-out>
       </testcase>
-      <testcase name="test3" class="OtrosTest" file="C:\xampp\htdocs\laravel\tests\OtrosTest.php" line="39" assertions="0" time="0.000159">
+      <testcase name="test3" class="OtrosTest" file="C:\xampp\htdocs\laravel\tests\OtrosTest.php" line="39" assertions="0" time="0.000150">
         <system-out>OtrosTest::test3
 </system-out>
       </testcase>
-      <testcase name="test4" class="OtrosTest" file="C:\xampp\htdocs\laravel\tests\OtrosTest.php" line="43" assertions="0" time="0.000157">
+      <testcase name="test4" class="OtrosTest" file="C:\xampp\htdocs\laravel\tests\OtrosTest.php" line="43" assertions="0" time="0.000148">
         <system-out>OtrosTest::test4
 </system-out>
       </testcase>
-      <testcase name="test5" class="OtrosTest" file="C:\xampp\htdocs\laravel\tests\OtrosTest.php" line="47" assertions="0" time="0.000161">
+      <testcase name="test5" class="OtrosTest" file="C:\xampp\htdocs\laravel\tests\OtrosTest.php" line="47" assertions="0" time="0.000171">
         <system-out>OtrosTest::test5
 </system-out>
       </testcase>
     </testsuite>
-    <testsuite name="ExampleTest" file="C:\xampp\htdocs\laravel\tests\baseTest.php" tests="5" assertions="2" failures="0" errors="0" time="0.000933">
-      <testcase name="test1" class="ExampleTest" file="C:\xampp\htdocs\laravel\tests\baseTest.php" line="22" assertions="1" time="0.000181">
+    <testsuite name="ExampleTest" file="C:\xampp\htdocs\laravel\tests\baseTest.php" tests="5" assertions="2" failures="0" errors="0" time="0.000846">
+      <testcase name="test1" class="ExampleTest" file="C:\xampp\htdocs\laravel\tests\baseTest.php" line="22" assertions="1" time="0.000191">
         <system-out>ExampleTest::test1
 </system-out>
       </testcase>
-      <testcase name="test2" class="ExampleTest" file="C:\xampp\htdocs\laravel\tests\baseTest.php" line="27" assertions="1" time="0.000167">
+      <testcase name="test2" class="ExampleTest" file="C:\xampp\htdocs\laravel\tests\baseTest.php" line="27" assertions="1" time="0.000183">
         <system-out>ExampleTest::test2
 </system-out>
       </testcase>
-      <testcase name="test3" class="ExampleTest" file="C:\xampp\htdocs\laravel\tests\baseTest.php" line="32" assertions="0" time="0.000179">
+      <testcase name="test3" class="ExampleTest" file="C:\xampp\htdocs\laravel\tests\baseTest.php" line="32" assertions="0" time="0.000152">
         <system-out>ExampleTest::test3
 </system-out>
       </testcase>
-      <testcase name="test4" class="ExampleTest" file="C:\xampp\htdocs\laravel\tests\baseTest.php" line="36" assertions="0" time="0.000258">
+      <testcase name="test4" class="ExampleTest" file="C:\xampp\htdocs\laravel\tests\baseTest.php" line="36" assertions="0" time="0.000175">
         <system-out>ExampleTest::test4
 </system-out>
       </testcase>
-      <testcase name="test5" class="ExampleTest" file="C:\xampp\htdocs\laravel\tests\baseTest.php" line="40" assertions="0" time="0.000148">
+      <testcase name="test5" class="ExampleTest" file="C:\xampp\htdocs\laravel\tests\baseTest.php" line="40" assertions="0" time="0.000145">
         <system-out>ExampleTest::test5
 </system-out>
       </testcase>

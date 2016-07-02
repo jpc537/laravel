@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1467416474">
-  <project timestamp="1467416474">
+<coverage generated="1467441793">
+  <project timestamp="1467441793">
+    <file name="C:\xampp/htdocs/laravel/tests/Money.php">
+      <class name="Money" namespace="global">
+        <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+      </class>
+      <line num="6" type="method" name="__construct" crap="1" count="1"/>
+      <line num="8" type="stmt" count="1"/>
+      <line num="9" type="stmt" count="1"/>
+      <line num="11" type="method" name="getAmount" crap="1" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="16" type="method" name="negate" crap="1" count="1"/>
+      <line num="18" type="stmt" count="1"/>
+      <metrics loc="21" ncloc="19" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+    </file>
     <file name="C:\xampp/htdocs/laravel/vendor/danielstjules/stringy/src/Create.php">
       <line num="17" type="stmt" count="0"/>
       <metrics loc="19" ncloc="10" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="1" coveredelements="0"/>
@@ -2582,6 +2595,6 @@
       <line num="64" type="stmt" count="0"/>
       <metrics loc="65" ncloc="22" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="11" coveredelements="0"/>
     </file>
-    <metrics files="29" loc="7254" ncloc="4708" classes="6" methods="52" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2424" coveredstatements="0" elements="2476" coveredelements="0"/>
+    <metrics files="30" loc="7275" ncloc="4727" classes="7" methods="55" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="2428" coveredstatements="4" elements="2483" coveredelements="7"/>
   </project>
 </coverage>
